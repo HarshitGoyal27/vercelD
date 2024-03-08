@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Assistant&family=Inter:wght@300&family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Assistant&family=Inter:wght@300&family=Nunito:ital,wght@1,200&family=Open+Sans:wght@300&display=swap");
+
+
+.logoContainer{
+    @media(width<=790px){
+        display: none;
+    }
+    width:350px;
+    background-color: #FCFCFC;
+    padding:0px 32px;
+    height:97vh;
+    /* font-family: SF Pro Display; */
+    font-family: Poppins, "sans-serif";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+}
+.heading{
+    
+    font-size: 20px;
+    width:250px;
+    text-align: center;
+}
+.subheading{
+    font-size: 12px;
+    color: #808080;
+    width:270px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.allLogo{
+    width:350px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    row-gap: 55px;
+    column-gap: 45px;
+    align-items: center;
+    justify-content: center;
+}
+.forma{
+    width:300px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    margin-top: 30px;
+    color: #212121;
+}
+.formContainer{
+    width:1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+    font-family: Poppins, "sans-serif";
+    
+}
+.register{
+    color: #212121;
+    font-size: 16px;
+}

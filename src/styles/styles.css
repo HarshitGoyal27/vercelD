@@ -1,0 +1,9 @@
+.H1color {
+  color: blue;
+}
+
+.fontSmall {
+  font-size: 25px;
+  font-weight: 900;
+  border: 2px solid blue;
+}

@@ -1,0 +1,24 @@
+<svg width="63" height="32" viewBox="0 0 63 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="press_banner_techcrunch_179498fd9e.svg" clip-path="url(#clip0_628_9156)">
+<g id="Clip path group">
+<mask id="mask0_628_9156" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="63" height="32">
+<g id="clip-path">
+<path id="Union 2" d="M41.803 31.125V20.792H62.47V31.125H41.803ZM31.47 31.125V10.458H41.803V31.125H31.47ZM10.803 31.125V10.458H21.137V31.125H10.803ZM41.803 10.458V0.125H62.47V10.458H41.803ZM0.470001 10.458V0.125H31.47V10.458H0.470001Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask0_628_9156)">
+<g id="press-banner-techcrunch">
+<g id="TechCrunch">
+<path id="Rectangle 1926" d="M62.47 0.125H0.470001V31.125H62.47V0.125Z" fill="#666666"/>
+<path id="logo-gradient" d="M62.47 0.125H0.470001V31.125H62.47V0.125Z" fill="#666666"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_628_9156">
+<rect width="62" height="31" fill="white" transform="translate(0.470001 0.125)"/>
+</clipPath>
+</defs>
+</svg>

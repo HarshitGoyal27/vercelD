@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
+
+.headingContainer{
+  @media(width<=320px){
+    width:900px;
+    margin-left: 200px;
+  }
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:150px;
+    margin:70px 150px 100px 150px;
+    width:1300px;
+}
+.content{
+    width:600px;
+    display: flex;
+    flex-direction: column;
+    gap:35px;
+    font-family: "Poppins", sans-serif;
+}
+
+.heading{
+    font-size: 55px;
+    font-weight: 540;
+    width:800px;
+}
+
+.headingDesc{
+    line-height: 23px;
+    font-size: 20px;
+    width:700px;
+    font-family: "Poppins", sans-serif;
+}
+
+.clients{
+    margin:70px 100px 100px 130px;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    gap:35px;
+    width:700px;
+}
+.clientImages{
+    display: flex;
+    gap:30px;
+    margin-left: -20px;
+}
+.jobdesc{
+  @media(width<=320px){
+    width:1090px;
+  }
+    background-color: #FAFAFA;
+    padding: 10px 100px ;
+    display: flex;
+    padding-bottom: 80px;
+    width:1300px;
+}
+.joinSkills{
+  
+  padding: 100px;
+  width:1300px;
+}
+.jobdescContent{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap:45px;
+    width:800px;
+}
+.profileSlide{
+ 
+  width:600px; 
+  height:570px;
+}
+.jobdescHeading{
+    font-size: 35px;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 50px;
+}
+
+.jobrespon{
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+}
+
+.jobresponContent{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    padding-left:20px;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    margin: 0px 0px 0px 32px ;
+}
+
+.flexgap{
+  @media(width<=320px){
+    width:350px;
+  }
+    display: flex;
+    flex-direction: column;
+    gap:25px
+}
+.flexgap1{
+  @media(width<=320px){
+    /* width:300px; */
+  }
+    display: flex;
+    flex-direction: column;
+    gap:25px
+}
+.carauselImagesProfile {
+   
+  
+    height: 200px;
+    width: 200px;
+    margin-right: 10px;
+    border-radius: 195px;
+    object-fit: cover;
+  }
+  .ProfilecardStyle {
+    /* @media(768px <=width <=1030px) {
+      margin-left: 55px;
+      width: 700px;
+    } */
+  
+    
+  
+    margin:20px;
+    margin-left:20%;
+    height:450px;
+    width:360px;
+    padding:20px;
+    background-color:white;
+  }
+  .contentCandidate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    padding: 5px;
+    margin-top: 58px;
+    font-size: 14px;
+    font-family: Poppins, "sans-serif";
+  }
+  .name {
+    @media(width <=320px) {
+      font-size: 19px;
+      width: 200px;
+      margin-left: 20px;
+    }
+  
+    font-size: 22px;
+    font-weight: 700;
+    font-family: Poppins,
+    "sans-serif";
+    margin-top: -35px;
+  }
+  .candidateskills {
+    width: 90%;
+    height: 10%;
+    margin: 5px 0px 5px 0px;
+    font-family: Poppins, "sans-serif";
+  
+   
+  }
+  .skillsIcons{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap:15px;
+  }
+  .iconBox{
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    padding: 5px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 2px 2px gainsboro;
+  }
+  .iconsContainer{
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+    margin-left: 50px;
+    font-family: Poppins,"sans-serif";
+  }
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .whyjoinImages{
+    @media(width<=320px){
+      width:300px;
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:400px;
+    height:300px;
+    border: 1px solid gainsboro;
+    border-radius: 15px;
+  }
+  .whyjoinContent{
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+  }
+  .container{
+    margin-left: 50px;
+  }
+
+  

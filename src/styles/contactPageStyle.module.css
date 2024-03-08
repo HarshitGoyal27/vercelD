@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins&display=swap");
+.leftContainet{
+    width:500px;
+    display: flex;
+    flex-direction: column;
+    gap:80px;
+    padding: 50px;
+    font-family: "Poppins", sans-serif;
+}
+.heading{
+    font-size: 30px;
+}
+
+.flex{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.coninfo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.coninfo2{
+    display: flex;
+    gap: 10px;
+}

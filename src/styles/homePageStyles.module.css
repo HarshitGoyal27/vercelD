@@ -1,0 +1,1173 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Assistant&family=Inter:wght@300&family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Assistant&family=Inter:wght@300&family=Nunito:ital,wght@1,200&family=Open+Sans:wght@300&display=swap");
+
+.topImage{
+  @media(1000px<width<1280px){
+    width:400px;
+    height: 400px;
+    /* display: none; */
+  }
+}
+#avideoContainer {
+  @media(width>1600px) {
+    width: 1400px;
+    margin: 0px auto;
+  }
+  @media(1000px<width<=1520px) {
+    width: 97vw;
+    margin: 10px ;
+  }
+  @media(720px<width<=1000px) {
+    /* width: 100vw; */
+    margin: 0px 100px;
+  }
+  @media(320px<width<=768px) {
+    width: 1100px;
+  }
+
+  @media(width<=320px) {
+    width: 800px;
+    margin-left: 60px;
+  }
+
+  width:1200px;
+  /* margin: 20px 5px 80px 5px; */
+  margin: 0 150px;
+}
+.videostyle{
+  @media(1000px<width<=1200px){
+    width:100px;
+    height:100px;
+  }
+}
+.backGroundBlueHomePage {
+  @media(width>1600px){
+    width:1500px;
+    height:900px;
+  }
+  @media(1200px<width<=1500px) {
+    width: 97vw;
+  }
+  @media(768px<width<=1000px) {
+    width: 1450px;
+  }
+
+  @media(425px<width<=768px) {
+    width: 1450px;
+  }
+
+  @media(430px>=width>320px) {
+    width: 1440px;
+  }
+
+  @media(width<=320px) {
+    width: 1268px;
+  }
+
+  background-color: #2871FF;
+  text-align: center;
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  width: 97vw;
+  margin: 60px auto;
+  height: 80vh;
+  align-items: center;
+  padding: 60px 0px;
+}
+@media(1000px<width<=1200px){
+  #ourEliteNetwork{
+    width:97vw;
+  }
+  .onDemandStyle{
+    width:97vw;
+    margin:0px 0px;
+  }
+  .backGroundBlueHomePage{
+    width:97vw;
+  }
+  
+  .speedcard{
+    width:97vw;
+  }
+  .speedQualityContainer{
+    width:97vw;
+  }
+  .threeCardStyle{
+    
+    width:97vw;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* .speedandQualityCardContainer{
+    width:400px;
+  } */
+  .worldMapStyle{
+    font-family: "Poppins", sans-serif;
+  }
+}
+#ourEliteNetwork {
+  @media(width>1600px) {
+    width: 1500px;
+    margin: 0px auto;
+  }
+  @media(width<=1500px) {
+    width: 97vw;
+  }
+  @media(768px<width<=1000px) {
+    width: 1450px;
+  }
+
+  @media(425px<width<=768px) {
+    width: 1450px;
+  }
+
+  @media(320px<width<=426px) {
+    width: 1440px;
+  }
+
+  @media(width<=320px) {
+    width: 1260px;
+  }
+
+  margin: 20px 5px 80px 5px;
+}
+
+.sapCloudLegacyCard {
+  @media(768px<width<=1025px) {
+    width: 40vw;
+  }
+
+  @media(425px<width<=768px) {
+    width: 50vw;
+  }
+
+  @media(320px<width<=426px) {
+    width: 80vw;
+  }
+
+  @media(width<=320px) {
+    width: 400px;
+    padding: 10px;
+  }
+
+  width: 30vw;
+  padding: 25px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.onDemandStyle {
+  @media(width>1600px){
+    width:1400px;
+    margin:30px auto;
+  }
+  @media(1000px<width<=1500px){
+    padding: 0px;
+  }
+  @media(768px<width<=1000px) {
+    width: 900px;
+    margin: 0px 150px;
+    
+  }
+
+  @media(425px<width<=768px) {
+    width: 1200px;
+    margin: 0px 150px;
+  }
+
+  @media(320px<width<=426px) {
+    width: 1200px;
+    margin: 0px 150px;
+  }
+
+  @media(width<=320px) {
+    width: 1000px;
+    margin: 0px 150px;
+    margin-left: 100px;
+  }
+  margin: 20px 5px 80px 5px;
+  padding: 10px 30px;
+}
+.middlespecialCardOuter{
+  @media(1024px<width<=1500px){
+    width:30vw;
+  }
+  font-family: "Poppins", sans-serif;
+}
+.pointsStyling{
+    color: #515151;
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  
+}
+.whychooseImage{
+  @media(1000px<width<=1200px) {
+    height:500px;
+    width: 350px;
+  }
+}
+.chooseDeveloper {
+  @media(1200px<width<=1500px) {
+    width: 90vw;
+    /* margin-left: 100px; */
+    margin:0px;
+  }
+  @media(1000px<width<=1200px){
+    width: 90vw;
+    /* margin-left: 100px; */
+    margin:0px;
+  }
+  @media(768px<width<=1000px) {
+    width: 1200px;
+    margin-left: 100px;
+  }
+  
+  @media(425px<width<=768px) {
+    width: 1200px;
+  }
+
+  @media(320px<width<=426px) {
+    width: 1200px;
+    margin-left: -20px;
+  }
+
+  @media(width<=320px) {
+    width: 900px;
+    margin-left: 50px;
+  }
+  /* margin: 0px 150px; */
+  margin: 20px 100px 80px 100px;
+}
+
+.speedcard {
+  @media(width<=1500px) {
+    width: 97vw;
+  }
+  @media(768px<width<=1000px) {
+    width: 900px;
+    margin-left: 300px;
+  }
+  
+  @media(425px<width<=768px) {
+    width: 1200px;
+  }
+
+  @media(320px<width<=426px) {
+    width: 1200px;
+    margin-left: -20px;
+  }
+
+  @media(width<=320px) {
+    width: 900px;
+    margin-left: 50px;
+  }
+}
+
+.homePageMainHeading {
+  @media(width>1600px){
+    width:800px;
+  }
+  @media(1000px<width<=1140px){
+    font-size: 32px;
+    width:800px;
+  }
+  width: 800px;
+  color: black;
+  opacity: 0.9;
+  font-family: "Poppins", sans-serif;
+  font-size: 35px;
+  /* font-size: 2.5rem; */
+  font-style: normal;
+  line-height: "normal";
+  font-weight: 800;
+  padding: 0px 30px;
+  line-height: normal;
+  margin-block-start: 0.8em;
+  margin-block-end: 0.1em;
+
+
+
+}
+
+.speedQualityContainer {
+  @media(width>1600px){
+    width: 1400px;
+    margin: 20px auto;
+    gap:0px;
+  }
+  @media(768px<width<=1000px) {
+    gap: 45px;
+  }
+
+  @media(425px<width<=768px) {
+    margin-left: 199px;
+  }
+
+  @media(width<=426px) {
+    margin-left: 199px;
+  }
+
+  @media(width<=320px) {}
+
+  display: flex;
+  gap:25px;
+}
+
+.speedandQualityCardContainer {
+  @media(1024px<width<=1200px) {
+    width: 35vw;
+  }
+  @media(768px<width<=1025px) {
+    width: 35vw;
+  }
+
+  @media(640px<width<=768px) {
+    width: 50vw;
+  }
+
+  @media(425px<width<=640px) {
+    width: 70vw;
+  }
+
+  @media(320px<width<=431px) {
+    width: 90vw;
+  }
+
+  @media(width<=320px) {
+    width: 100vw;
+    height: 650px;
+  }
+
+  width: 30vw;
+  height: 540px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins";
+  padding: 40px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: #fff;
+  box-shadow: 5px 5px 140px 0px rgba(0, 0, 0, 0.25);
+  border-bottom: 12px solid #2871ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.worldMapStyle {
+  @media(1000px<width<=1200px){
+    width:97vw;
+  }
+
+  @media(width>1600px) {
+    width: 1400px;
+    margin: 30px auto;
+    height:900px;
+  }
+  @media(1000px<width<=1500px) {
+    width: 97vw;
+    height: 750px;
+  }
+  @media(768px<width<=1000px) {
+    width: 1450px;
+    height: 750px;
+  }
+
+  @media(425px<width<=768px) {
+    width: 1450px;
+    height: 750px;
+  }
+
+  @media(320px<width<=426px) {
+    width: 1440px;
+    height: 750px;
+  }
+
+  @media(width<=320px) {
+    width: 1250px;
+    height: 750px;
+  }
+ 
+  background-color: #2871FF;
+  text-align: center;
+  color: #FFF;
+  display: flex;
+  /* justify-content: center; */
+  /* position: relative; */
+  width: 97vw;
+  margin: 60px 0px;
+  height: 100vh;
+}
+
+.worldmapImage {
+  @media(width>1600px){
+    /* width: 500px;
+    height: 340px; */
+    margin-left: 440px;
+  }
+  @media(1000px<width<=1520px) {
+    margin-left: 500px;
+    width:50vw;
+    height: 400px;
+  }
+ 
+  @media(width<=1000px) {
+    margin-left: 500px;
+  }
+
+  
+
+  @media(320px<width<=426px) {
+    /* width: 500px;
+    height: 340px; */
+  }
+
+  @media(width<=320px) {
+    width: 730px;
+    height: 400px;
+    margin-left: 500px;
+  }
+  width:940px;
+  height: 520px;
+  margin-top: -50px;
+  margin-left: 540px;
+  /* position: absolute; */
+  top: 0;
+}
+
+.threeCardStyle {
+  @media(width>1600px) {
+    width: 1400px;
+    margin: 0px auto;
+  }
+  @media(1200px<width<=1500px) {
+    width: 97vw;
+    margin: 0px auto;
+  }
+
+  @media(768px<width<=1000px) {
+    width: 1400px;
+  }
+
+  @media(425px<width<=768px) {
+    width: 1400px;
+  }
+
+  @media(320px<width<=426px) {
+    width: 1200px;
+    margin-left: 120px;
+  }
+
+  @media(width<=320px) {
+    width: 1100px;
+    margin-left: 40px;
+  }
+
+  display: flex;
+  justify-content: center;
+}
+
+.structureCardCss {
+  @media(1000px<width<=1200px) {
+    width: 30vw;
+  }
+  @media(768px<width<=1000px) {
+    width: 35vw;
+  }
+
+  @media(640px<width<=768px) {
+    width: 45vw;
+  }
+
+  @media(480px<width<=640px) {
+    width: 60vw;
+  }
+
+  @media(425px<width<=480px) {
+    width: 75vw;
+  }
+
+  @media(320px<width<=431px) {
+    width: 85vw;
+  }
+
+  @media(width<=320px) {
+    width: 100vw;
+    margin: 0px 0px;
+  }
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+  margin: 0px 10px;
+  margin-top: 20px;
+  width: 25vw;
+  font-family: "Poppins", sans-serif;
+}
+.structureCardFont{
+  font-family: "Poppins", sans-serif;
+  line-height: 30px;
+}
+.specialCard {
+  @media(1024px<width<=1500px) {
+    /* width: 205px; */
+    width:20vw;
+  }
+
+  @media(425px<width<=768px) {}
+
+  @media(320px<width<=426px) {}
+
+  @media(width<=320px) {}
+
+  display: flex;
+  align-items: center;
+  margin: 15px 20px;
+  border: 2px solid #D1D1D1;
+  background-color: #f6f6f6;
+  border-radius: 6px;
+  width: 295px;
+  gap: 20px;
+  padding: 5px 20px;
+}
+
+.specialCardOuter {
+  @media(768px<width<=1025px) {
+    /* width: 205px; */
+  }
+
+  @media(425px<width<=768px) {}
+
+  @media(320px<width<=426px) {}
+
+  @media(width<=320px) {}
+}
+
+.speedandQualityCardImage {
+  /* object-fit: cover; */
+  height: 300px;
+  width: 400px;
+  border: solid red;
+}
+
+/* Card Heading */
+.speedandQualityCardHeading {
+  font-size: 2rem;
+  margin-bottom: 8px;
+  text-align: center;
+
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  margin-block-start: 0.2em;
+  margin-block-end: 0.2em;
+}
+
+/* Card Subheading */
+.speedandQualityCardSubHeading {
+  color: #2871ff;
+  font-family: "Nunito", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: normal;
+  /* width: 516px; // Uncomment or modify as needed */
+  text-align: center;
+  margin-bottom: 25px;
+  /* Note: Removed the trailing comma */
+  margin-block-start: 0.3em;
+  margin-block-end: 0.1em;
+  padding: 12px;
+  border-bottom: 0.5px solid #00000087;
+  font-family: "Nunito", sans-serif;
+}
+
+/* Card Paragraph Text */
+.speedandQualityCardPara {
+  color: #515151;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.homePageMainHeadingItalic {
+  color: #2871ff;
+  font-family: "Poppins", sans-serif;
+  font-size: 48px;
+  /* font-style: italic; */
+  line-height: "normal";
+  font-weight: 800;
+  /* padding: 0px 20px; */
+  line-height: 30px;
+  /* 166.667% */
+}
+
+.homePageMainSubHeading {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  padding: 0px 30px;
+  width: 600px;
+  margin-bottom: 30px;
+}
+
+.homePageMainHeadingPara {
+  color: black;
+  opacity: 0.9;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  /* 166.667% */
+  padding: 0px 30px;
+  width: 600px;
+  /* margin-bottom: 30px; */
+  margin-block-start: 0.5em;
+  margin-block-end: 0.1em;
+}
+
+
+
+
+
+
+
+
+
+/* Why Choose Us */
+.whyUsMainHeading {
+  color: var(--Black, #000);
+  /* Title/Heading 1 */
+  font-family: "Poppins", sans-serif;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 96px;
+  /* 133.333% */
+  text-align: center;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+.whyUsMainSubHeading {
+  color: var(--Black, #000);
+  font-family: "Nunito", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: left;
+  padding: 0px 10px;
+  /* width: 500px; */
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+.whyUsMainPointsHeading {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  width: 669px;
+  text-align: left;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+.whyUsMainPara {
+  color: var(--Black, #000);
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: left;
+  width: 500px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-block-end: 0em;
+}
+
+.whyChooseUs2 {
+  @media(1024px<width<=1200px){
+    width:1100px;
+    /* margin-left: 100px; */
+  }
+  @media(768px<width<=1025px) {
+    margin-left: 300px;
+    width: 600px;
+  }
+
+  @media(425px<width<=768px) {
+    margin-left: 300px;
+    width: 600px;
+  }
+
+  @media(320px<width<=426px) {
+    margin-left: 300px;
+    width: 600px;
+  }
+
+  @media(width<=320px) {
+    margin-left: 200px;
+    width: 600px;
+  }
+
+  color: var(--Black, #000);
+  /* Title/Heading 1 */
+  font-family: "Poppins",
+  sans-serif;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 96px;
+  /* 133.333% */
+  text-align: center;
+  width:600px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+.whyChooseUs2MiddleCard {
+  @media(1024px<width<=1500px){
+    width:30vw;
+  }
+  color: #2871ff;
+  /* Title/Heading 1 */
+  font-family: "Poppins", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  /* line-height: 96px; 133.333% */
+  width: 400px;
+  text-align: center;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+/* text carausel */
+.outerContainer {
+  @media(1000px<width<=1200px){
+    width:97vw;
+    margin:0px;
+  }
+  @media(width>1600px) {
+    width: 1400px;
+    margin: 0px auto;
+  }
+  @media(1200px<width<=1500px) {
+    width: 97vw;
+    margin:0px;
+  }
+  
+  @media(width<=320px) {
+    width: 1250px;
+    /* margin-left: -138px; */
+  }
+
+  @media(320px<width<=426px) {
+    width: 1420px;
+    /* margin-left: -144px; */
+  }
+
+  @media(426px<width<=1000px) {
+    width: 1424px;
+    /* margin-left: -130px; */
+  }
+
+  width: 1480px;
+  height: 558px;
+  background: #F1EFEF;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  margin-top: 100px;
+}
+
+.quoteText {
+  width: 1300px;
+@media(1000px<width<=1500px){
+  width:80vw;
+  margin: 0px 100px 0px 190px;
+}
+  @media(width<=330px) {
+    width: 800px;
+    margin: 0px 100px 0px 190px;
+  }
+
+  margin-left: -40px;
+  color: var(--www-turing-com-mine-shaft, #212121);
+  text-align: center;
+  font-family: SF Pro Display;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 39.76px;
+}
+
+/*ends*/
+
+.prevarrow {
+  color: black;
+  font-size: 40;
+}
+
+.prevarrow:hover {
+  color: black;
+  font-size: 40;
+}
+
+.nextarrow {
+  color: black;
+  font-size: 40;
+}
+
+.nextarrow:hover {
+  color: black;
+  font-size: 40;
+}
+
+/*Home page carausel*/
+.carauselContainer {
+  height: 300px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  border: 2px solid black;
+  margin-left: 18%;
+  padding: 5px;
+  gap: 5px;
+  border-radius: 12px;
+  font-family: Poppins, "sans-serif";
+}
+
+.skillsSection {
+  @media(768px<width <=1024px) {
+    margin-top: 60px;
+  }
+
+  @media(640px<width <=768px) {
+    margin-top: 60px;
+  }
+
+  @media(425px<width <=640px) {
+    margin-top: 30px;
+  }
+
+  @media(320px<width <=431px) {
+    margin-top: 0px;
+  }
+
+  @media(width <=320px) {
+    margin-top: 10px;
+  }
+
+  margin-top: 60px;
+}
+
+.name {
+  @media(width <=320px) {
+    font-size: 19px;
+    width: 115px
+  }
+
+  font-size: 22px;
+  font-weight: 700;
+  font-family: Poppins,
+  "sans-serif";
+}
+
+.candidateskills {
+  @media(width<=640px) {
+    display: none;
+  }
+
+  width: 90%;
+  height: 10%;
+  margin: 5px 0px 5px 0px;
+  font-family: Poppins,
+  "sans-serif";
+
+
+}
+
+#availableContainer {
+  @media(width<=320px) {
+    gap: 5px;
+  }
+
+  display: flex;
+  gap: 35px;
+  text-transform: capitalize;
+
+  @media(width<=640px) {
+    flex-direction: column;
+  }
+}
+
+.contentCandidate {
+  height: 300px;
+  padding: 5px;
+  margin-top: -10px;
+  font-size: 14px;
+  font-family: Poppins, "sans-serif";
+}
+
+.can_button {
+  @media(width<=426px) {
+    font-size: 10px;
+  }
+
+  color:white;
+  background-color: #111827;
+  border-radius: 12px;
+  height:25px;
+  margin-bottom: -40px;
+  padding:3px;
+  padding:2px 22px 0px 22px;
+  border:1px solid white;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.profileCarausel {
+  @media(width>1600px){
+    width:1200px;
+  }
+  @media(width<=320px) {
+    width: 129vw;
+    margin-left: 10px;
+  }
+
+  @media(320px<width<=376px) {
+    width: 129vw;
+    margin-left: 10px;
+  }
+
+  @media(375px<width<=768px) {
+    width: 120vw;
+    margin-left: 10px;
+  }
+
+  @media(width<=426) {
+    width: 150vw;
+  }
+
+  @media(768px <=width <=1000px) {
+    margin-left: -30px;
+  }
+  @media(1000px <=width <=1200px) {
+    width:80vw;
+  }
+
+  height:300px;
+  width:80vw;
+}
+
+.flexCenter {
+  @media(width>1600px){
+    width:1400px;
+    margin:10px auto;
+  }
+  display: flex;
+  justify-content: center;
+}
+.ondemandflex{
+  display: flex;
+}
+.topContentSection{
+  @media(width>1600px){
+    width:800px;
+  }
+  @media(1000px<width<=1500px){
+    width:55vw;
+  }
+  width:800px;
+}
+.carauselOutercontainer {
+  @media(width>1600px) {
+    width: 1500px;
+    margin: 0px auto;
+    height:1000px;
+  }
+  @media(1000px<width<=1500px) {
+    width: 100vw;
+    margin: 0;
+    /* display: none; */
+  }
+  @media(width<=426px) {
+    width: 1260px;
+    /* margin-left: -138px; */
+    margin-top: 60px;
+    /* display: none; */
+  }
+  @media(width<=320px) {
+    width: 1260px;
+    margin-left: 0px;
+    margin-top: 60px;
+    /* display: none; */
+  }
+
+  width: 1470px;
+  height: 426px;
+  margin-left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.carauselHeading {
+  color: var(--Black, #000);
+  font-family: Poppins, "sans-serif";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 170px;
+}
+
+.belowHeading {
+  color: var(--Black, #000);
+  text-align: center;
+  font-family: Poppins, "sans-serif";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 700px;
+  margin: 14px 0px 20px 0px;
+}
+
+.ProfilecardStyle {
+  @media(768px <=width <=1030px) {
+    margin-left: 55px;
+    width: 700px;
+  }
+
+  @media(768px >=width > 320px) {
+    margin-left: 118px;
+  }
+
+  @media(320px<width<=431px) {
+    /* margin-left:20px;
+    height:280px;
+    width:800px; 
+    padding:20px; */
+    width: 340px;
+    height: 260px;
+  }
+
+  @media(width<=320px) {
+    width: 280px;
+    height: 240px;
+    margin-left: 120px;
+  }
+
+  margin:20px;
+  margin-left:20%;
+  height:280px;
+  width:60%;
+  padding:20px;
+  border-radius:20px;
+  border:1px solid black;
+  background-color:#FFF;
+}
+
+.slide {
+  @media(320px<width<=426px) {
+    margin-left: -50px;
+  }
+
+  @media(width<=320px) {
+    margin-left: -50px;
+  }
+}
+
+.carauselImagesProfile {
+  @media(506px<width<=580px) {
+    height: 240px;
+    width: 200px;
+    border-radius: 25px;
+    margin-bottom: 40px;
+  }
+
+  @media(480px<width<=507px) {
+    height: 200px;
+    width: 160px;
+    border-radius: 25px;
+    margin-bottom: 40px;
+  }
+
+  @media(425px<width<=480px) {
+    height: 200px;
+    width: 160px;
+    border-radius: 35px;
+    margin-bottom: 40px;
+  }
+
+  @media(320px<width<=426px) {
+    height: 200px;
+    width: 160px;
+    border-radius: 55px;
+    margin-bottom: 40px;
+  }
+
+  @media(width<=320px) {
+    height: 150px;
+    width: 110px;
+    border-radius: 75px;
+    margin-bottom: 40px;
+  }
+
+  height: 280px;
+  width: 240px;
+  margin-top: -49px;
+  margin-right: 10px;
+  border-radius: 15px;
+  margin-left: -10px;
+  object-fit: cover;
+}
+
+/*end*/
+.topTwoButtons {
+  @media(768px <=width <=1030px) {}
+
+  @media(768px >=width > 320px) {
+    width: 70vw;
+  }
+
+  @media(320px<width<=426px) {
+    width: 600px;
+  }
+
+  @media(width<=320px) {
+    width: 600px;
+  }
+
+  display: flex;
+  width: 60vw;
+}
