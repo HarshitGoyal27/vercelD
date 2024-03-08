@@ -72,20 +72,23 @@ const FotterComponent = () => {
 
       {/* 3rd Division */}
       <div className={css.division}>
-        <h4>Services</h4>
+        <div style={{color:"white",marginTop:"45px",fontSize:"30px",fontWeight:"900"}}>Tech Specialties</div>
 
-        <li>
+        {/* <li>
           <Link href="/talent-pool#faq" >
             {FooterPageText.servicesPoint1}
           </Link>
-        </li>
-        <p>{FooterPageText.servicesPoint2}</p>
-        <p>{FooterPageText.servicesPoint3}</p>
+        </li> */}
+        <p>SAP</p>
+        <p>Cloud & DevOps</p>
+        <p>Legacy Tech</p>
+        {/* <p>{FooterPageText.servicesPoint2}</p>
+        <p>{FooterPageText.servicesPoint3}</p> */}
       </div>
       {/* 4th Division */}
       <div className={css.division}>
         <h4>Contact</h4>
-        <p>{FooterPageText.phone}</p>
+        {/* <p>{FooterPageText.phone}</p> */}
         <p>{FooterPageText.email}</p>
         <div>Address: <div style={{ fontSize: "11px" }}><div>{FooterPageText.address1}</div>
           <div>{FooterPageText.address2}</div></div>

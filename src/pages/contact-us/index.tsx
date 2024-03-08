@@ -12,16 +12,21 @@ import style from "../../styles/contactPageStyle.module.css";
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import EmailIcon from '@mui/icons-material/Email';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import Navbar from '@/components/molecules/navbar';
+import FotterComponent from '@/components/molecules/Fotter';
 const Contact = () => {
     return (
-        <div className={css.step2container}>
-            <div className={css.step2innercontainer}>
+        <div>
+            <Navbar/>
+        <div className={style.step2container}>
+
+            <div className={style.step2innercontainer}>
                 <div className={style.leftContainet} >
                     <div className={style.heading}>Lets get in touch</div>
                     <div className={style.coninfo}>
                         <div className={style.flex}><LocationOnIcon/> {FooterPageText.address1} {FooterPageText.address2}</div>
                         <div className={style.flex}><EmailIcon/> {FooterPageText.email}</div>
-                        <div className={style.flex}><LocalPhoneIcon/> {FooterPageText.phone}</div>
+                        {/* <div className={style.flex}><LocalPhoneIcon/> {FooterPageText.phone}</div> */}
                     </div>
                     <div  className={style.coninfo2}>
                         <a href="#" className={css.socialIcon}>
@@ -85,6 +90,10 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
+        </div>
+        <div>
+        <FotterComponent />
+        </div>
         </div>
     )
 }

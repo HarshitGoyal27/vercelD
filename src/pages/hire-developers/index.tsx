@@ -22,7 +22,6 @@ const HireDeveloper = () => {
   const router = useRouter();
   const HireDeveloperClicked = () => {
     // router.push("/search-developers");
-    
   };
   const WatchVideoClicked = () => {
     alert("WatchVideoClicked Clicked");
@@ -486,56 +485,6 @@ const HireDeveloper = () => {
         </section>
 
         <section >
-
-          <section className={hireDevStyles.deeplyVetted} >
-            <div style={{ display: "flex", flexDirection: "column", gap: "20px" }} >
-              <div className={hireDevStyles.heading1}>{HireDeveloperPageText.deepDeveloperHeading}</div>
-              <div className={hireDevStyles.subheading}>{HireDeveloperPageText.deepDeveloperSubHeading}</div>
-              <div className={hireDevStyles.para}>{HireDeveloperPageText.deepDeveloperPara}</div>
-
-              <CustomButton2
-                onClick={handleClick}
-                label={HireDeveloperPageText.deepDeveloperButtonText}
-                buttonStyle={{
-                  color: "#FFF",
-                  borderRadius: "5px",
-                  background: "#2871FF",
-                  fontSize: "15px",
-                  padding: "10px 25px",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  gap: "10px",
-                  width: "160px",
-                  border: "1px solid #2871FF",
-                  margin: "0px 15px 0px 0px",
-                }}
-                hoverStyle={{
-                  color: "#FFF",
-                  borderRadius: "5px",
-                  background: "#2871FF",
-                  fontSize: "15px",
-                  padding: "10px 25px",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  gap: "10px",
-
-                  margin: "0px 15px 0px 0px",
-                  boxShadow: " 0px 5px 5px grey",
-                }}
-              />
-            </div>
-            <div>
-              <div style={{ display: "flex", gap: "10px", padding: "10px", marginBottom: "20px" }}>
-                <div className={profileButton === "sap" ? hireDevStyles.sapprofileButtonSelected : hireDevStyles.sapprofileButton} onClick={() => (setProfileButton("sap"))}>Sap Profile</div>
-                <div className={profileButton === "cloud" ? hireDevStyles.sapprofileButtonSelected : hireDevStyles.sapprofileButton} onClick={() => (setProfileButton("cloud"))}>Cloud Profile</div>
-                <div className={profileButton === "legacy" ? hireDevStyles.sapprofileButtonSelected : hireDevStyles.sapprofileButton} onClick={() => (setProfileButton("legacy"))}>Legacy Profile</div>
-              </div>
-              {profileButton === "sap" && <Image style={{ boxShadow: "2px 5px 5px 5px lightgrey" }} src="/HireDevImages/devProfile.png" alt="profile" height={700} width={600} />}
-              {profileButton === "cloud" && <Image style={{ boxShadow: "2px 5px 5px 5px lightgrey" }} src="/HireDevImages/devProfile.png" alt="profile" height={700} width={600} />}
-              {profileButton === "legacy" && <Image style={{ boxShadow: "2px 5px 5px 5px lightgrey" }} src="/HireDevImages/devProfile.png" alt="profile" height={700} width={600} />}
-
-            </div>
-          </section>
 
           <section style={commonStyle.sectionMargin}>
             <br />

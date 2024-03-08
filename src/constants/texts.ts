@@ -901,7 +901,7 @@ export const FooterPageText={
 
   phone:"Phone: +123456789",
   email:"Email: contact@skillscapital.io",
-  address1:"A-63 GREEN VALLEY,",
-  address2:"SECTOR 41-42 FARIDABAD 121010"
+  address1:"B1/H3, NH-19, Block B,",
+  address2:"Mohan Cooperative Industrial Estate, New Delhi, 110044"
 }
 export default TEXTS;
