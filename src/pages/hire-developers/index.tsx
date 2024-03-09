@@ -167,7 +167,7 @@ const HireDeveloper = () => {
                   width={70}
                 // style={{ borderRadius: "10px" }}
                 />
-                <Image
+                {/* <Image
                   className={hireDevStyles.amazon}
                   src={`/HireDeveloperImages/company_6.png`}
                   alt="Logo"
@@ -182,7 +182,7 @@ const HireDeveloper = () => {
                   height={20}
                   width={70}
                   style={{ marginTop:"-0px" }}
-                />
+                /> */}
                 <Image
                   className={hireDevStyles.amazon}
                   src={`/HireDeveloperImages/company_9.jpg`}

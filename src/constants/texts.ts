@@ -30,9 +30,10 @@ export const HomePageText = {
   // SectionTitle ->  //Skills Capital First Section
   //  ---------------------------------------------------------------------------------------------------------------------------
 
-  heading_1: "Transform and Elevate Your Tech Capabilities",
-  heading_2:"with Pre-Vetted Talent in Specialized Skills",
+  heading_1: "Transform Your Tech Capabilities",
+  heading_2:"with Vetted Talent in Specialized Skills,",
   heading_3:"10X Faster and with 95% Accuracy",
+  heading_4:"Transform Your Tech Capabilities with Vetted Talent in Specialized Skills, 10X Faster and with 95% Accuracy",
   heading1Bold: "Skills Capital",
   heading2:
     "Your Gateway to Elite, Specialized Tech Expertise where Precision meets Speed",
@@ -168,7 +169,7 @@ export const HomePageText = {
   speedImgUrl:
     "https://s3-alpha-sig.figma.com/img/84a2/2931/becc55966cb23e8c7d7f3b39f666a15c?Expires=1702857600&Signature=UIfJx8l7uzzmcKuhDOlgzBXQQ-bxhf0aYfxw07ymVDj3n0eYpjSuS4AEPRfsGYk3CD-IKxMX7zgpB2SSUXnuXIQvGKBI-qanBfEvLMtZ7rhdTuk0F03Y2ofWS~5jjQ2qQ5whJlsIRE5tyZ3EOFauPndPW3o3fYy023Q8Vb52S2-sZ8e4584A0W6VsFYOTshUstFpDgK2KNAEFZzmr40wlY3QPAVcl2~~keOC4VT3VF5U31w-Dw9muKAYQjj9Y687s2EXQmRMTSOszGpIn-c2sJss~0YVchXNGhV0ZjkbkgjUsh5Q8MANDUaNgSOv4rcqQRru9JQOoBPKWPRkVjNy1w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
   speedHeading: "Lightning-Fast Turnaround",
-  speedSubHeading: "10% Faster Delivery",
+  speedSubHeading: "10X Faster Delivery",
   speedPara:
     "Choose our developers for a deployment speed that's ten times faster than traditional channels, ensuring you gain swift access to top-tier talent and can accelerate your project timelines effectively",
 
@@ -220,7 +221,7 @@ export const HomePageText = {
     "Tailored to your needs",
     "Track record of success",
     "Easy team assimilation",
-    "24/7 assistance and guidance",
+    "24/7 support & guidance",
   ],
   whyUsCard1ImgUrl: "https://offshoreteam.io/wp-content/uploads/2023/11/deeply-vetted.jpg",
 

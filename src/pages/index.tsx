@@ -60,6 +60,7 @@ export default function Home({ allData }: { allData: any }) {
                 <div>{HomePageText.heading_1}</div>
                 <div>{HomePageText.heading_2}</div>
                 <div>{HomePageText.heading_3}</div>
+                {/* <div>{HomePageText.heading_4}</div> */}
               </h1>
 
               <h2 className={homePageStyle.homePageMainSubHeading}>
@@ -311,7 +312,7 @@ export default function Home({ allData }: { allData: any }) {
       <section>
         <div className={homePageStyle.backGroundBlueHomePage}>
           <div>
-            <h1 className={hireDevStyles.heading}>
+            <h1 id={hireDevStyles.heading}>
               {HomePageText.topCompaniesHeading}
             </h1>
             <br />

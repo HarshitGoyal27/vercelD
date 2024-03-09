@@ -273,7 +273,7 @@ export const accordianStylingHomePage = {
     fontFamily: "Poppins",
     fontSize: "18px",
     fontStyle: "normal",
-    fontWeight: "700",
+    fontWeight: "500",
     lineHeight: "1.4",
     margin: "0px 12px",
     marginBottom: '40px',
