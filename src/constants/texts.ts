@@ -191,7 +191,7 @@ export const HomePageText = {
 
   worldMapHeading: `200,000+ Developers with Hard-to-Find Skills Comprise Our Skills Capital Talent Pool`,
 
-  worldMapPara: `Title Leveraging Our 12,200+ Deeply Vetted Elite Tech Talents to Empower Clients and Drive Innovation Across the Globe`,
+  worldMapPara: `Leveraging Our 12,200+ Deeply Vetted Elite Tech Talents to Empower Clients and Drive Innovation Across the Globe`,
 
   worldMapNum1: `20+`,
   worldMapNum1Title: `Niche Technologies`,

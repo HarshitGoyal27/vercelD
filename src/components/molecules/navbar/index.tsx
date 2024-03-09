@@ -27,7 +27,7 @@ const Navbar: React.FC = () => {
 
   return (
 
-    <div className={css.navbarContainer}>
+    <div id={css.navbarContainer}>
       <Box component="div" >
         <Link href="/">
           <Image

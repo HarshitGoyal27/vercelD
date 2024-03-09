@@ -13,21 +13,21 @@ const FotterComponent = () => {
   return (
     <footer className={css.footer}>
       {/* 1st Division */}
-      <div className={css.division1}>
+      <div id={css.division1}>
         <div>
           <p>Skills Capital</p>
         </div>
         <div  >
-          <a href="#" className={css.socialIcon}>
+          <a href="#" id={css.socialIcon}>
             <TwitterIcon sx={{ color: "white" }} />
           </a>
-          <a href="#" className={css.socialIcon}>
+          <a href="#" id={css.socialIcon}>
             <FacebookIcon sx={{ color: "white" }} />
           </a>
-          <a href="#" className={css.socialIcon}>
+          <a href="#" id={css.socialIcon}>
             <InstagramIcon sx={{ color: "white" }} />
           </a>
-          <a href="https://www.linkedin.com/company/skillscapital/" target="_blank" className={css.socialIcon}>
+          <a href="https://www.linkedin.com/company/skillscapital/" target="_blank" id={css.socialIcon}>
             <LinkedInIcon sx={{ color: "white" }} />
           </a>
           {/* Add more social media icons as needed */}
@@ -35,21 +35,21 @@ const FotterComponent = () => {
       </div>
 
       {/* 2nd Division */}
-      <div className={css.division}>
-        <h4>Pages</h4>
-        <li>
-          <Link href="/"  >
+      <div id={css.division}>
+        <h4 className={css.heading}>Pages</h4>
+        <li className={css.li2}>
+          <Link href="/"  id={css.site}>
             Home
           </Link>
         </li>
 
-        <li>
-          <Link href="/hire-developers"  >
+        <li className={css.li2}>
+          <Link href="/hire-developers" id={css.site} >
             Hire Developers
           </Link>
         </li>
-        <li>
-          <Link href="/contact-us"  >
+        <li className={css.li2}>
+          <Link href="/contact-us" id={css.site}>
             Contact Us
           </Link>
         </li>
@@ -71,7 +71,7 @@ const FotterComponent = () => {
       </div>
 
       {/* 3rd Division */}
-      <div className={css.division}>
+      <div id={css.division}>
         <div style={{color:"white",marginTop:"45px",fontSize:"30px",fontWeight:"900"}}>Tech Specialties</div>
 
         {/* <li>
@@ -86,8 +86,8 @@ const FotterComponent = () => {
         <p>{FooterPageText.servicesPoint3}</p> */}
       </div>
       {/* 4th Division */}
-      <div className={css.division}>
-        <h4>Contact</h4>
+      <div id={css.division}>
+        <h4 className={css.heading}>Contact</h4>
         {/* <p>{FooterPageText.phone}</p> */}
         <p>{FooterPageText.email}</p>
         <div>Address: <div style={{ fontSize: "11px" }}><div>{FooterPageText.address1}</div>

@@ -135,17 +135,17 @@
     width:850px;
     margin-left: 3px;
   }
-  height: 50vh;
+  height: 400px;
   display: flex;
   justify-content: space-around;
   /* align-items: center; */
   padding: 60px 200px;
   background-color: #1e1e1e;
   color: #ffffff;
-  margin-top: 210px;
+  margin-top: 110px;
 }
 
-.division {
+#division {
   flex: 1;
   color: #d1d1d1;
   font-family: Poppins, "sans-serif";
@@ -154,7 +154,7 @@
   font-weight: 400;
   line-height: normal;
 }
-.division1 {
+#division1 {
   flex: 1;
   margin-top: 30px;
   color: #d1d1d1;
@@ -165,7 +165,7 @@
   line-height: normal;
 }
 
-.division h4 {
+.heading {
   color: #fff;
 
   font-family: Poppins, "sans-serif";
@@ -174,28 +174,36 @@
   font-weight: 700;
   line-height: normal;
 }
-.division li {
+.li2 {
   list-style: none;
   margin-bottom: 15px;
   color: #ccc;
+  text-decoration: none;
 }
 .division li a {
   text-decoration: none;
   color: #ccc;
 }
-
+#site{
+  text-decoration: none;
+  color: #ccc;
+}
 .logo {
   max-width: 100px; /* Adjust the size as needed */
 }
 
-.socialIcons {
+#socialIcons {
   fill: white;
   display: flex;
   margin-top: 10px;
+  text-decoration: none;
+  color: #ccc;
 }
 
 .socialIcon {
   margin-right: 10px;
+  text-decoration: none;
+  color: #ccc;
 }
 
 /* Add more styles as needed */
@@ -275,7 +283,7 @@
   
 }
 
-.navbarContainer{
+#navbarContainer{
   @media(1000px<width<=1200px){
     width: 100vw;
     margin: 0;

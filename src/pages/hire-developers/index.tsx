@@ -278,12 +278,12 @@ const HireDeveloper = () => {
           </section>
         </main>
         <section id={hireDevStyles.ourEliteContainer}>
-          <div className={hireDevStyles.ourEliteHeading}>Our Elite Developers</div>
+          <div id={hireDevStyles.ourEliteHeading}>Our Elite Developers</div>
           <div className={hireDevStyles.sapContainer}>
             <div className={hireDevStyles.sapInnerContainer}>
-              <div className={hireDevStyles.sapCloudLegacyHeading}>{HireDeveloperPageText.sapHeading}</div>
-              <div className={hireDevStyles.sapCloudLegacySubHeading}>{HireDeveloperPageText.sapSubHeading}</div>
-              <div className={hireDevStyles.sapCloudLegacyPara}>{HireDeveloperPageText.sapPara}</div>
+              <div id={hireDevStyles.sapCloudLegacyHeading}>{HireDeveloperPageText.sapHeading}</div>
+              <div id={hireDevStyles.sapCloudLegacySubHeading}>{HireDeveloperPageText.sapSubHeading}</div>
+              <div id={hireDevStyles.sapCloudLegacyPara}>{HireDeveloperPageText.sapPara}</div>
               <div>
                 <button className={hireDevStyles.sapButtonStyle}>{HireDeveloperPageText.sapButtonText}</button>
               </div>
@@ -296,9 +296,9 @@ const HireDeveloper = () => {
               <Image className={hireDevStyles.cloudImage} src={cloudExpertise} alt="" />
             </div>
             <div className={hireDevStyles.cloudeInnerContainer}>
-              <div className={hireDevStyles.sapCloudLegacyHeading}>{HireDeveloperPageText.cloudHeading}</div>
-              <div className={hireDevStyles.sapCloudLegacySubHeading}>{HireDeveloperPageText.cloudSubHeading}</div>
-              <div className={hireDevStyles.sapCloudLegacyPara}>{HireDeveloperPageText.cloudPara}</div>
+              <div id={hireDevStyles.sapCloudLegacyHeading}>{HireDeveloperPageText.cloudHeading}</div>
+              <div id={hireDevStyles.sapCloudLegacySubHeading}>{HireDeveloperPageText.cloudSubHeading}</div>
+              <div id={hireDevStyles.sapCloudLegacyPara}>{HireDeveloperPageText.cloudPara}</div>
               <div>
                 <button className={hireDevStyles.sapButtonStyle}>{HireDeveloperPageText.cloudButtonText}</button>
               </div>
@@ -306,9 +306,9 @@ const HireDeveloper = () => {
           </div>
           <div className={hireDevStyles.sapContainer}>
             <div className={hireDevStyles.sapInnerContainer}>
-              <div className={hireDevStyles.sapCloudLegacyHeading}>{HireDeveloperPageText.legacyHeading}</div>
-              <div className={hireDevStyles.sapCloudLegacySubHeading}>{HireDeveloperPageText.legacySubHeading}</div>
-              <div className={hireDevStyles.sapCloudLegacyPara}>{HireDeveloperPageText.legacyPara}</div>
+              <div id={hireDevStyles.sapCloudLegacyHeading}>{HireDeveloperPageText.legacyHeading}</div>
+              <div id={hireDevStyles.sapCloudLegacySubHeading}>{HireDeveloperPageText.legacySubHeading}</div>
+              <div id={hireDevStyles.sapCloudLegacyPara}>{HireDeveloperPageText.legacyPara}</div>
               <div>
                 <button className={hireDevStyles.sapButtonStyle}>{HireDeveloperPageText.legacyButtonText}</button>
               </div>
@@ -321,7 +321,7 @@ const HireDeveloper = () => {
         <section>
           <div className={hireDevStyles.backGroundBlue}>
             <div>
-              <h1 className={hireDevStyles.heading}>
+              <h1 id={hireDevStyles.heading}>
                 {HomePageText.topCompaniesHeading}
               </h1>
               <br />
@@ -484,19 +484,9 @@ const HireDeveloper = () => {
           </div>
         </section>
 
-        <section >
-
-          <section style={commonStyle.sectionMargin}>
-            <br />
-            <br />
-            <br />
-            <center>
-              {" "}
-            </center>
-          </section>
-        </section>
+        
         <section className={hireDevStyles.outerhowitwork}>
-          <div>
+          
             <div className={hireDevStyles.howitHeading}>How it works?</div>
             <div className={hireDevStyles.howitwork}>
               <div>
@@ -530,7 +520,7 @@ const HireDeveloper = () => {
                     the Final Tarent/Team</div>
                 </div>
               </div>
-            </div>
+            
           </div>
           <CustomButton2
             label="Hire Now"
@@ -549,15 +539,7 @@ const HireDeveloper = () => {
             }}
           />
         </section>
-        {/* <section className={hireDevStyles.aboveFooter} >
-          <center>
-            {" "}
-            <h2 className={hireDevStyles.profileSectionHeadinh} >
-              Hire Developers Based On Skills
-            </h2>
-          </center>
-          <CandidateProfile />
-        </section> */}
+    
 
         <FotterComponent />
       </div>

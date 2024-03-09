@@ -17,7 +17,7 @@ export const fontStyling = {
 
     color: `${PRIMARY_BLACK}`,
 
-    fontFamily: `${PRIMARY_FONT_FAMILY}`,
+    fontFamily: "Poppins",
     fontSize: '58px',
     fontStyle: 'normal',
     fontWeight: '600',
@@ -30,7 +30,7 @@ export const fontStyling = {
   spanMainHeading: {
     color: `${PRIMARY_BLUE_COLOR}`,
     fontStyle: 'italic',
-    fontFamily: `${PRIMARY_FONT_FAMILY}`,
+    fontFamily: "Poppins",
     fontSize: '65px',
     fontWeight: '700',
     // color:'red',
@@ -54,14 +54,14 @@ export const fontStyling = {
   spanmainHeadingHireDev: {
     color: `${PRIMARY_BLUE_COLOR}`,
     fontStyle: 'italic',
-    fontFamily: `${PRIMARY_FONT_FAMILY}`,
+    fontFamily: "Poppins",
     fontSize: '65px',
     fontWeight: '600',
     // color:'red',
   },
   mainSubHeadingHireDev: {
     color: '#909090',
-    fontFamily: `${COMMON_FONT_FAMILY2}`,
+    fontFamily: "Poppins",
     fontSize: '24px',
     fontStyle: 'normal',
     fontWeight: '400',
@@ -71,7 +71,7 @@ export const fontStyling = {
   },
   commonSectionHeading: {
     color: '#000',
-    fontFamily: "Gestura Display TRIAL",
+    fontFamily: "Poppins",
     fontSize: "40px",
     fontStyle: "normal",
     fontWeight: "700",
@@ -84,7 +84,7 @@ export const fontStyling = {
 
   commonParagraphStyling: {
     color: `${PRIMARY_BLACK}`,
-    fontFamily: "Gestura Display TRIAL",
+    fontFamily: "Poppins",
     fontSize: "18px",
     fontStyle: "normal",
     fontWeight: "500",
@@ -99,7 +99,7 @@ export const fontStyling = {
 
     // width: '573px',
     color: '#000',
-    fontFamily: `${SECONDARY_FONT_FAMILY}`,
+    fontFamily: "Poppins",
     fontSize: '30px',
     fontSyle: 'normal',
     fontWeight: '400',
@@ -109,7 +109,7 @@ export const fontStyling = {
 
   mainSubParaStyling: {
     color: `#000`,
-    fontFamily: `${SECONDARY_FONT_FAMILY}`,
+    fontFamily: "Poppins",
     fontSize: `18px`,
     fontStyle: `normal`,
     fontWeight: `400`,
@@ -122,7 +122,7 @@ export const fontStyling = {
   sectionHeading: {
     color: `#000`,
 
-    fontFamily: `${PRIMARY_FONT_FAMILY}`,
+    fontFamily: "Poppins",
     fontSize: `40px`,
     fontStyle: `normal`,
     fontWeight: `700`,
@@ -135,7 +135,7 @@ export const fontStyling = {
   sectionBlueSubHeading: {
     color: `${PRIMARY_BLUE_COLOR}`,
 
-    fontFamily: `Nunito`,
+    fontFamily: "Poppins",
     fontSize: `22px`,
 
     fontWeight: `800`,
@@ -150,7 +150,7 @@ export const fontStyling = {
   sectionBlackSubHeading: {
     color: `#000`,
 
-    fontFamily: `SF Pro Display`,
+    fontFamily: "Poppins",
     fontSize: `24px`,
     // fontStyle: `italic`,
     fontWeight: `700`,
@@ -167,7 +167,7 @@ export const fontStyling = {
   sectionSubHeading: {
     color: `#000`,
 
-    fontFamily: `${PRIMARY_FONT_FAMILY}`,
+    fontFamily: "Poppins",
     fontSize: `20px`,
     fontStyle: `normal`,
     fontWeight: `400`,
@@ -182,7 +182,7 @@ export const fontStyling = {
 
   pointsStyling: {
     color: "#515151",
-    fontFamily: "SF Pro Display",
+    fontFamily: "Poppins",
     fontSize: "22px",
     fontStyle: "normal",
     fontWeight: "500",
@@ -192,7 +192,7 @@ export const fontStyling = {
     width: '400px',
     color: `${PRIMARY_BLUE_COLOR}`,
     textAlign: "center" as "center",
-    fontFamily: 'SF Pro Display',
+    fontFamily: "Poppins",
     fontSize: '35px',
     fontStyle: 'normal',
     fontWeight: '1000',
@@ -202,7 +202,7 @@ export const fontStyling = {
   sapCloudLegacySubHeading: {
     color: '#2A282F',
     textAlign: "center" as "center",
-    fontFamily: 'SF Pro Display',
+    fontFamily: "Poppins",
     fontSize: '24px',
     fontStyle: 'normal',
     fontWeight: '700',
@@ -270,7 +270,7 @@ export const accordianStylingHomePage = {
   },
   accordianStylingPara: {
     color: `${PRIMARY_BLACK}`,
-    fontFamily: "Open Sans",
+    fontFamily: "Poppins",
     fontSize: "18px",
     fontStyle: "normal",
     fontWeight: "700",
@@ -282,7 +282,7 @@ export const accordianStylingHomePage = {
   },
   commonParagraphStyling: {
     color: `${PRIMARY_BLACK}`,
-    fontFamily: "Open Sans",
+    fontFamily: "Poppins",
     fontSize: "18px",
     fontStyle: "normal",
     fontWeight: "700",
@@ -305,7 +305,7 @@ const commonStyle = {
   color: "red",
 
   mainx: {
-    fontFamily: "Gestura Display TRIAL",
+    fontFamily: "Poppins",
     color: "red",
   },
   dflex: {
@@ -361,7 +361,7 @@ const commonStyle = {
   },
   sectionHeadingCenter: {
     color: `red`,
-    fontFamily: "Gestura Display TRIAL",
+    fontFamily: "Poppins",
     fontSize: "80px",
     fontStyle: "normal",
     fontWeight: "700",
@@ -369,7 +369,7 @@ const commonStyle = {
   },
   sectionHeading: {
     color: `${PRIMARY_COLOR}`,
-    fontFamily: "Gestura Display TRIAL",
+    fontFamily: "Poppins",
     fontSize: "40px",
     fontStyle: "normal",
     fontWeight: "700",
@@ -404,7 +404,7 @@ export const blueSection = {
 
   },
   para: {
-    fontFamily: "SF Pro Display",
+    fontFamily: "Poppins",
     fontSize: "28px",
     fontWeight: " 400",
   },
@@ -448,7 +448,7 @@ export const worldMap = {
     textAlign: "center" as "center",
     // margin:'0px auto',
     fontFamily: "Poppins",
-    fontSize: "68px",
+    fontSize: "50px",
     // lineHeight: 1.4,
     fontStyle: "normal",
     fontWeight: "1000",
@@ -494,7 +494,7 @@ export const HireDeveloperHero = {
 
   },
   para: {
-    fontFamily: "SF Pro Display",
+    fontFamily: "Poppins",
     textAlign: "start" as "start",
     fontSize: "24px",
     width: '600px',
@@ -600,7 +600,7 @@ export const profileSlidingCardDesign = {
   profileDesignationLarge: {
     margin: "0px 15px",
     // fontStyle: 'italic',
-    fontFamily: `SF Pro Display`,
+    fontFamily: "Poppins",
     fontSize: '20px',
     fontWeight: '400',
     textAlign: "start" as 'start',
@@ -651,7 +651,7 @@ export const profileCardDesign = {
   profileDesignation: {
     color: `${PRIMARY_BLUE_COLOR}`,
     fontStyle: 'italic',
-    fontFamily: `${PRIMARY_FONT_FAMILY}`,
+    fontFamily: "Poppins",
     fontSize: '18px',
     fontWeight: '500',
   },
@@ -677,7 +677,7 @@ export const profileCardDesign = {
   profileDesignationMainCard: {
     color: `${PRIMARY_BLUE_COLOR}`,
 
-    fontFamily: `${PRIMARY_FONT_FAMILY}`,
+    fontFamily: "Poppins",
     fontSize: '20px',
     fontWeight: '500',
     lineHeight: "1",
@@ -686,7 +686,7 @@ export const profileCardDesign = {
   },
   profileMainCArdBio: {
     color: "#201f1f",
-    fontFamily: `SF Pro Display`,
+    fontFamily: "Poppins",
     textAlign: "start" as "start",
     fontSize: "15px",
     fontStyle: "normal",
@@ -703,7 +703,7 @@ export const profileCardDesign = {
 
   },
   profileMainCArdContent: {
-    fontFamily: `${PRIMARY_FONT_FAMILY}`,
+    fontFamily: "Poppins",
     fontSize: "20px",
     fontStyle: "normal",
     fontWeight: "500",
@@ -714,7 +714,7 @@ export const profileCardDesign = {
 
   },
   profileMainCArdSkills: {
-    fontFamily: `${PRIMARY_FONT_FAMILY}`,
+    fontFamily: "Poppins",
     fontSize: "20px",
     fontStyle: "normal",
     fontWeight: "500",
@@ -791,7 +791,7 @@ export const talentPoolHeroSection = {
     // border:"2px solid red",
     color: 'black',
     textAlign: 'center' as 'center',
-    fontFamily: `${PRIMARY_FONT_FAMILY}`,
+    fontFamily: "Poppins",
     fontSize: "48px",
     fontStyle: "normal",
     fontWeight: "500",
@@ -802,7 +802,7 @@ export const talentPoolHeroSection = {
   boldHeading: {
     color: '#2871FF',
     textAlign: 'center' as 'center',
-    fontFamily: `${PRIMARY_FONT_FAMILY}`,
+    fontFamily: "Poppins",
     fontSize: "48px",
     fontStyle: "italic",
     fontWeight: "700",
@@ -812,7 +812,7 @@ export const talentPoolHeroSection = {
   subHeading: {
     color: 'black',
     textAlign: 'center' as 'center',
-    fontFamily: `${COMMON_FONT_FAMILY}`,
+    fontFamily: "Poppins",
     fontSize: "24px",
     fontStyle: "normal",
     fontWeight: "400",
@@ -848,7 +848,7 @@ export const talentPoolBlackBackground = {
 
   },
   para: {
-    fontFamily: "SF Pro Display",
+    fontFamily: "Poppins",
     textAlign: "start" as "start",
     fontSize: "28px",
     width: '600px',
@@ -912,7 +912,7 @@ export const cardsStyling = {
     textAlign: "center" as "center",
     fontWeight: "900",
     marginBottom: "20px",
-    fontFamily: "Open Sans",
+    fontFamily: "Poppins",
     // width:"230px",
     marginLeft:"-15px"
   },
@@ -925,7 +925,7 @@ export const cardsStyling = {
 
     color: '#000',
 
-    fontFamily: "Open Sans",
+    fontFamily: "Poppins",
     fontSize: '15px',
     fontStyle: 'normal',
     fontWeight: '500',
@@ -948,21 +948,21 @@ export const cardsStyling = {
     fontSize: "3rem",
     textAlign: "center" as "center",
     fontWeight: 600,
-    fontFamily: `${SECONDARY_FONT_FAMILY}`,
+    fontFamily: "Poppins",
   },
   heading: {
     fontSize: "2rem",
     textAlign: "center" as "center",
     fontWeight: 500,
     marginBottom: "20px",
-    fontFamily: `${SECONDARY_FONT_FAMILY}`,
+    fontFamily: "Poppins",
   },
   paraText: {
     fontSize: "2rem",
     textAlign: "center" as "center",
     fontWeight: 500,
     marginBottom: "20px",
-    fontFamily: `${SECONDARY_FONT_FAMILY}`,
+    fontFamily: "Poppins",
   },
   button: {
     color: "black",
@@ -976,7 +976,7 @@ export const cardsStyling = {
   },
 };
 export const ulLiStyle = {
-  fontFamily: `${PRIMARY_FONT_FAMILY}`,
+  fontFamily: "Poppins",
   color: '#000',
 
   fontSize: '16px',
@@ -1011,7 +1011,7 @@ export const blackBox: any = {
     width: "547px",
     color: "#FFF",
     textAlign: "center",
-    fontFamily: "Gestura Display TRIAL",
+    fontFamily: "Poppins",
     fontSize: "48px",
     fontStyle: "normal",
     fontWeight: "600",
@@ -1026,7 +1026,7 @@ export const blackBox: any = {
     color: "#FFF",
     width: "240px",
     textAlign: "center",
-    fontFamily: "Gestura Display TRIAL",
+    fontFamily: "Poppins",
     fontSize: "32px",
     fontStyle: "normal",
     fontWeight: "600",
@@ -1059,7 +1059,7 @@ export const blackBox: any = {
     // fontWeight:"bold"
     color: "var(--Blue, #2871FF)",
     textAlign: "center",
-    fontFamily: "Nunito",
+    fontFamily: "Poppins",
     fontSize: "40px",
     fontStyle: "normal",
     fontWeight: "600",
@@ -1181,7 +1181,7 @@ export const quote: any = {
     width: "1300px",
     color: "var(--www-turing-com-mine-shaft, #212121)",
     textAlign: "center",
-    fontFamily: "SF Pro Display",
+    fontFamily: "Poppins",
     fontSize: "28px",
     fontStyle: "italic",
     fontWeight: "300",
