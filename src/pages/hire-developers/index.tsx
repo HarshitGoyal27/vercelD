@@ -21,7 +21,7 @@ const HireDeveloper = () => {
   const [profileButton, setProfileButton] = useState("sap");
   const router = useRouter();
   const HireDeveloperClicked = () => {
-    // router.push("/search-developers");
+    router.push("/search-developers");
   };
   const WatchVideoClicked = () => {
     alert("WatchVideoClicked Clicked");
