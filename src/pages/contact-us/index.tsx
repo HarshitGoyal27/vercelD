@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState, useEffect } from 'react';
 import css from "../../styles/subreq.module.css";
 import Link from 'next/link';
 import Image from 'next/image';
@@ -14,7 +15,27 @@ import EmailIcon from '@mui/icons-material/Email';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import Navbar from '@/components/molecules/navbar';
 import FotterComponent from '@/components/molecules/Fotter';
+import emailjs from 'emailjs-com';
 const Contact = () => {
+    const [reci,setRecipient]=useState('');
+    const onSendMail=()=>{
+        const recipient = reci;
+        const subject = 'Subject of the email';
+        const body = 'Body of the email hello hi';
+        console.log('ABc',reci);
+        const mailtoUrl = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        const anchor = document.createElement('a');
+        // anchor.href = mailtoUrl;
+        // anchor.click();
+        // window.open
+        setTimeout(() => {
+            window.open(mailtoUrl, '_blank');
+          }, 100);
+    }
+    const handleInputChange=(e:any)=>{
+        console.log(e.target.value)
+        setRecipient(e.target.value);
+    }
     return (
         <div>
             <Navbar/>
@@ -64,7 +85,7 @@ const Contact = () => {
                                 name="Email"
                                 sx={{ width: "300px" }}
                             // value={ClientData.Email}
-                            // onChange={handleInputChange}
+                               onChange={handleInputChange}
                             // helperText={errors.Email}
                             />
                         </div>
@@ -81,7 +102,7 @@ const Contact = () => {
                             {/* <label htmlFor="">Message</label> */}
                         </div>
                         <Button
-                            // onClick={onNextStep} 
+                            onClick={onSendMail} 
                             // disabled={!ClientData.workType || !ClientData.Name || !ClientData.Email}
                             style={{ width: "190px", padding: "15px 15px", borderRadius: "45px" }}
                             variant="contained">
