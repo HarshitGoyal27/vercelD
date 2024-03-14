@@ -18,12 +18,13 @@ import FotterComponent from '@/components/molecules/Fotter';
 import emailjs from 'emailjs-com';
 const Contact = () => {
     const [reci,setRecipient]=useState('');
+    const [body,setBody]=useState('');
     const onSendMail=()=>{
         const recipient = reci;
         const subject = 'Subject of the email';
-        const body = 'Body of the email hello hi';
+        const Body = body;
         console.log('ABc',reci);
-        const mailtoUrl = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        const mailtoUrl = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(Body)}`;
         const anchor = document.createElement('a');
         // anchor.href = mailtoUrl;
         // anchor.click();
@@ -35,6 +36,11 @@ const Contact = () => {
     const handleInputChange=(e:any)=>{
         console.log(e.target.value)
         setRecipient(e.target.value);
+    }
+
+    const handleBody=(e:any)=>{
+        console.log(e.target.value);
+        setBody(e.target.value);
     }
     return (
         <div>
@@ -96,7 +102,7 @@ const Contact = () => {
                                 name="message"
                                 sx={{ width: "300px" }}
                             // value={ClientData.Email}
-                            // onChange={handleInputChange}
+                               onChange={handleBody}
                             // helperText={errors.Email}
                             />
                             {/* <label htmlFor="">Message</label> */}
