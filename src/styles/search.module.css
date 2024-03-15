@@ -479,9 +479,16 @@
 
 .cp {
   overflow-y: auto;
-  max-height: 50px; /* Adjust the max height as needed */
+  max-height: 100px; /* Adjust the max height as needed */
   width: 100%;
   /* background-color: green; */
+  scrollbar-width: none;
+  font-size:13px;
+  word-spacing: 5px;
+  line-height: 15px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 800;
+
 }
 
 .cp::-webkit-scrollbar {
@@ -489,9 +496,7 @@
 }
 
 /* Hide scrollbar for Firefox */
-.cp {
-  scrollbar-width: none;
-}
+
 
 
 
@@ -512,9 +517,7 @@
 }
 
 .infobox > div:nth-child(odd) {
-  background-color: #f0f0f0; /* Alternate row background color */
 }
 
 .infobox > div:nth-child(even) {
-  background-color: red; /* Alternate row background color */
 }

@@ -872,12 +872,11 @@ const Form: React.FC = () => {
                         <div className={css.infobox}>
                             
                               <div>Current</div>
-                              <div>ABC</div>
+                              <div>{profile.CurrentRole}</div>
                           
                       
                               <div>Previous</div>
-                              <div>BCD</div>
-                            
+                              <div>{profile.PreviousRole}</div>
                             
                               <div>Education</div>
                               <div>EFG</div>
