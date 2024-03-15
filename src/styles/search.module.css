@@ -258,7 +258,7 @@
   letter-spacing: 4px;
   margin-bottom: 30px;
   background: linear-gradient(135deg, #fd6e6a, #ffcc5c, #38f9d7);
-  /* -webkit-background-clip: text; */
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: pulse 2s infinite;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
