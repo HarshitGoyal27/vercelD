@@ -154,12 +154,15 @@ export const HomePageText = {
   whyOurDevelopersSubHeading3: `Versatile Skills`,
   whyOurDevelopersSubPara3: `With a diverse skill set ranging from SAP and Cloud to Legacy systems, our developers can address an array of technical challenges.`,
 
+  whyOurDevelopersSubHeading4:`Versatile Skills for Comprehensive Solutions`,
+
   whyOurDevelopersImage: `https://s3-alpha-sig.figma.com/img/42e7/8b9f/7bcf80c32e55528e0b1870bfaf57ff1e?Expires=1702857600&Signature=UIAK2fEdQLHcf8oW86aNipe0eUXAAgomKYuW60L97Bwgy8XdlUKnMGDJ4ZnpPQUzQoPrbvrL5avkrizN8ArUYiXZQX5Oz5XJFe-4zwbfbpiD1FrUwA03yvqXKuwF3Z8jyGSSZQbQh9ddp1zt17HUVw8BZeYdF69boufuo-cuoAS0N3XhPk8EjKu8tdQjFmPho6LnwexzmdzBaX1BRY3ZkcnQr-ESmSMgBj8Q0MJJ3v7vnRqFD9~0aq9EArzaSarVBcIb8GS0Dp3gSBHDlkOSccHCvl2S~TcVIHxe7~JQJqa1zaKhremonK1lijuHiftyk6nKiJXuBFSzAly8BUV2Mg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4`,
 
   whyOurDevelopersKeyPoint:`At SkillsCapital, our elite SAP consultants stand out for their unparalleled expertise, dedication, and commitment to delivering exceptional results. Learn why businesses trust our consultants to drive their SAP projects to success.`,
 
   paraPoints: ["Our SAP consultants undergo rigorous vetting processes powered by cutting-edge AI technology. This ensures that only the most qualified and capable consultants are selected for your projects. By leveraging AI for vetting, we guarantee unmatched quality and expertise in every consultant we provide, giving you peace of mind and confidence in the capabilities of your SAP team.", "With our streamlined processes and agile deployment strategies, our SAP consultants can be onboarded and ready to contribute to your projects in record time. Whether you need support for urgent initiatives or want to kickstart your SAP implementation without delays, our fast deployment capabilities ensure that you can harness the expertise of our consultants precisely when you need it.",
-    "When you choose our SAP consultants, you're tapping into a pool of top-tier talent with cutting-edge expertise in the latest SAP technologies and solutions. Whether you're looking to implement SAP S/4HANA, optimize your supply chain with SAP Ariba, or streamline financial processes with SAP Finance, our consultants have the skills and know-how to deliver results."
+  "When you choose our SAP consultants, you're tapping into a pool of top-tier talent with cutting-edge expertise in the latest SAP technologies and solutions. Whether you're looking to implement SAP S/4HANA, optimize your supply chain with SAP Ariba, or streamline financial processes with SAP Finance, our consultants have the skills and know-how to deliver results.",
+  "Our SAP consultants possess a diverse skill set that spans across various SAP modules, industry domains, and project types. From functional expertise in SAP ERP modules to technical proficiency in SAP HANA and SAP S/4HANA, our consultants have the versatility to address a wide range of project requirements and challenges."
   ],
 
   pointsIcons: [`https://cdn-icons-png.flaticon.com/512/5554/5554495.png`, `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnWDBm2vLn9Ij3UJ4I9n4X1v7O4_sEbk6PB1x368ia7MetDmUeFIOZGczVt7jWnO6bWYs&usqp=CAU`,

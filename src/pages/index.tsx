@@ -495,15 +495,16 @@ export default function Home({ allData }: { allData: any }) {
             heading={HomePageText.whyOurDevelopersHeading}
             subHeading={HomePageText.whyOurDevelopersPara}
             para={HomePageText.whyOurDevelopersKeyPoint}
-            noOfPoints={3}
+            noOfPoints={4}
             points={[
               HomePageText.whyOurDevelopersSubHeading1,
               HomePageText.whyOurDevelopersSubHeading2,
               HomePageText.whyOurDevelopersSubHeading3,
+              HomePageText.whyOurDevelopersSubHeading4
             ]}
             paraPoints={HomePageText.paraPoints}
             noOflogoImages={3}
-            logoImagesUrl={[`1`, "2", "3"]}
+            logoImagesUrl={[`1`, "2", "3","4"]}
             buttonEnable={false}
           />
         </section>
