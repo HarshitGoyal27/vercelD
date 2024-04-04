@@ -260,13 +260,21 @@ export const accordianStylingHomePage = {
     fontSize: "38px",
     fontStyle: "normal",
     fontWeight: "700",
-    width:"500px",
+    width:"800px",
     margin: "20px 12px",
     lineHeight: "normal",
     marginBlock: `0.3em 0.1em 0.1em 0em`,
-
-
-
+  },
+  accordianStylingSubHeading: {
+    color: `#000`,
+    fontFamily: "Poppins",
+    // fontSize: "22px",
+    fontStyle: "normal",
+    fontWeight: "700",
+    width:"600px",
+    margin: "20px 12px",
+    lineHeight: "normal",
+    marginBlock: `0.3em 0.1em 0.1em 0em`,
   },
   accordianStylingPara: {
     color: `${PRIMARY_BLACK}`,
@@ -900,7 +908,17 @@ export const cardsStyling = {
     marginBlockStart: '1em',
     marginBlockEnd: '0.1em',
   },
-
+  sapCloudLegacySubHeading: {
+    color: '#000',
+    fontFamily: "Poppins",
+    fontSize: "20px",
+    fontStyle: "normal",
+    fontWeight: "700",
+    lineHeight: "normal",
+    padding: "0px 12px",
+    marginBlockStart: '1em',
+    marginBlockEnd: '0.1em',
+  },
   sapCloudLegacyCardNumber: {
     fontSize: "2.5rem",
     textAlign: "center" as "center",

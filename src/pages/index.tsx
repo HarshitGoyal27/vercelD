@@ -227,6 +227,7 @@ export default function Home({ allData }: { allData: any }) {
               {HomePageText.secondHeading_h1}
             </h2>
             <br />
+            <h3 style={cardsStyling.sapCloudLegacySubHeading}>{HomePageText.secondSubHeading_h2}</h3>
             <br />
           </div>
           <div className="cards" style={commonStyle.dflex_1}>
@@ -237,37 +238,37 @@ export default function Home({ allData }: { allData: any }) {
               headingNumber={HomePageText.SAP_number}
               headingText={HomePageText.SAP_heading}
               paragraphText={HomePageText.SAP_content}
-              buttonText="Explore"
+              buttonText="Connect with SAP Talent Today - Elevate Your SAP Capabilities"
               onButtonClick={handleButtonExplore}
               buttonEnabled={true}
             />
 
             <CardComponent
               imageUrl={"/HomePageImages/2-CloudImage.png"}
-              imageHeight={250}
+              imageHeight={210}
               imageWidth={250}
               headingNumber={HomePageText.Cloud_number}
               headingText={HomePageText.Cloud_heading}
               paragraphText={HomePageText.Cloud_content}
-              buttonText="Explore"
+              buttonText="Connect with SAP Talent Today - Elevate Your SAP Capabilities"
               onButtonClick={handleButtonExplore}
               buttonEnabled={true}
             />
             <CardComponent
               imageUrl={"/HomePageImages/3-LegacyImage.png"}
-              imageHeight={270}
+              imageHeight={210}
               imageWidth={250}
               headingNumber={HomePageText.Legacy_number}
               headingText={HomePageText.Legacy_heading}
               paragraphText={HomePageText.Legacy_content}
-              buttonText="Explore"
+              buttonText="Connect with SAP Talent Today - Elevate Your SAP Capabilities"
               onButtonClick={handleButtonExplore}
               buttonEnabled={true}
             />
           </div>
         </div>
       </section>
-      <main className={homePageStyle.onDemandStyle} >
+      <main className={homePageStyle.onDemandStyle}>
         <section >
           <div className="accodiaonHome">
             <div className={homePageStyle.ondemandflex} >
@@ -275,6 +276,8 @@ export default function Home({ allData }: { allData: any }) {
                 <h2 style={accordianStylingHomePage.accordianStylingHeading}>
                   {HomePageText.thirdHeadingH1}
                 </h2>
+                <h3 style={accordianStylingHomePage.accordianStylingSubHeading}>{HomePageText.thirdSubHeadingH2_1}</h3>
+                <h3 style={accordianStylingHomePage.accordianStylingSubHeading}>{HomePageText.thirdSubHeadingH2_2}</h3>
 
                 <p style={accordianStylingHomePage.accordianStylingPara}>
                   {HomePageText.thirdPara}
@@ -294,6 +297,11 @@ export default function Home({ allData }: { allData: any }) {
                 <AccordionComponent
                   title={HomePageText.accodiaonHeading3}
                   content={HomePageText.accordionContent3}
+                />
+                <br />
+                <AccordionComponent
+                  title={HomePageText.accodiaonHeading4}
+                  content={HomePageText.accordionContent4}
                 />
               </div>
               <div>
@@ -438,7 +446,7 @@ export default function Home({ allData }: { allData: any }) {
                   style={{ borderRadius: "10px" }}
                 />
               </div>
-              <div style={{ backgroundColor: "white", borderRadius: "10px", width: "300px",height:"100px" }}>
+              <div style={{ backgroundColor: "white", borderRadius: "10px", width: "00px",height:"100px" }}>
                 <Image
                   className={hireDevStyles.amazon}
                   src={`/HireDeveloperImages/company_12.jpeg`}
@@ -486,6 +494,7 @@ export default function Home({ allData }: { allData: any }) {
             pointsIcons={HomePageText.pointsIcons}
             heading={HomePageText.whyOurDevelopersHeading}
             subHeading={HomePageText.whyOurDevelopersPara}
+            para={HomePageText.whyOurDevelopersKeyPoint}
             noOfPoints={3}
             points={[
               HomePageText.whyOurDevelopersSubHeading1,

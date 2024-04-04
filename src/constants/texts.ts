@@ -29,17 +29,17 @@ export const HomePageText = {
   //1st Section Starts
   // SectionTitle ->  //Skills Capital First Section
   //  ---------------------------------------------------------------------------------------------------------------------------
-
-  heading_1: "Transform Your Tech Capabilities",
-  heading_2:"with Vetted Talent in Specialized Skills,",
-  heading_3:"10X Faster and with 95% Accuracy",
+  //ABCEDFGHIJKL
+  heading_1: "Transform Your SAP Landscape: 10X",
+  heading_2:"Faster Talent Matching with 95% Precision Across 30+ SAP Domains",
+  heading_3:"",
   heading_4:"Transform Your Tech Capabilities with Vetted Talent in Specialized Skills, 10X Faster and with 95% Accuracy",
   heading1Bold: "Skills Capital",
   heading2:
-    "Your Gateway to Elite, Specialized Tech Expertise where Precision meets Speed",
+    "Unleash the Power of AI for Your SAP Talent Needs. Discover Elite SAP Talent, Powered by Cutting-Edge AI Technology!",
   heading2b: "",
   heading3:
-    "Leverage our Next-Gen AI-Driven platform to effortlessly connect with top-tier, hard-to-find tech professionals, ensuring your projects not only advance swiftly but are also executed with unmatched precision and quality. ",
+    "At SkillsCapital, we're redefining SAP talent acquisition with our AI-powered Talent Cloud. Seamlessly connect with top-tier SAP experts curated precisely for your needs, ensuring your projects not only advance swiftly but are also executed with unmatched precision and quality.",
   heading3b: " ",
   heading3c: "",
 
@@ -59,27 +59,28 @@ export const HomePageText = {
   // SectionTitle ->  //Our Elite Dev Network
   //  ---------------------------------------------------------------------------------------------------------------------------
 
-  secondHeading_h1: "Specialized Talent for Targeted Tech Domains",
+  secondHeading_h1: "Empower Your SAP Initiatives with Our Extensive Expert Network",
+  secondSubHeading_h2:"Access a World-Class Pool of SAP Professionals, Ready to Drive Your Success",
   SAP_imgUrl:
     "https://s3-alpha-sig.figma.com/img/f2a3/e28e/5d40a93ae7c76b9200df3ccf6bc596e1?Expires=1702252800&Signature=TtvanWiEwg9gceoGhukNXa0yjY~tYxS-4XrF51Iy5RhW3zb7ivLvdZ2Lt491lc2KcpxlAtRixYXLmcb9QVkKmJBtLB7HeFkK8utKSEOV7iKHHJ5ig0MKK~WnE-b12Rw~YgowCbgYpwSxeeqJq~1gVxCn3f4PdVDFJnI0BAfZqyZwRPUO54hd~cHqD86LPQJZvn~IdVHofA4SpJXXzTtYIUgvZlP0Kh3rhT~HU3zXxQSN55eMnKdg2DaA89wzmin2t-VTJtPS452g24GpwmSVn5ETuuI50ll0yE87sv30XgOLVBzXogFU2xgazzUG0X5EZgTIwbcf1ANE2fPiiR642Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
 
-  SAP_number: `4000+`,
-  SAP_heading: `SAP Specialist Hub`,
-  SAP_content: `Tap into our pre-vetted and curated team of SAP experts, driving your enterprise solutions with unmatched expertise and precision.  `,
+  SAP_number: `2,00,000+`,
+  SAP_heading: `Strong SAP Talent Pool`,
+  SAP_content: `Dive into our vast reservoir of SAP talent, encompassing over 200,000 professionals worldwide. Spanning across various industries and SAP modules, our extensive network ensures you find the right expertise for any SAP challenge.`,
 
   Cloud_imgUrl:
     "https://s3-alpha-sig.figma.com/img/d7cd/4bcd/997f9951c8e56f513a894eb83a574665?Expires=1702252800&Signature=GSeinVxiJjBHd6hCnk5-4eA0xmEtq29s-XSTk2wl29TPxdjWd~p~g8MFbQzZdmNn8gfX2FOe6criIh9aGVRh5ZpdNHNGhe446wyQNNsfHyt4mlzqA5SxHb-N7TZpQ4NTaulA~r1Wava4CoeOZb~dlZV4aUamEDRWPc8co1pPgfPwtP1mYBWWqXGKyb6onXnKKCxpR9Rj1Si9lzhxVGnO3TBqIQLI4G6Kth3sTBybOrZnhdUMC6CITkv-C3vZCJSvLry~pryWQXIJPTAdGyV3vA0m4~Yq8imiX2IoAluh3JKnoley0xjefXCgJUQXPadA0ZoZJwjxGJr3GW6JMU7PmA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
 
-  Cloud_number: `3000+`,
-  Cloud_heading: `Cloud & DevOps Excellence`,
-  Cloud_content: `Empower your Cloud & DevOps with our elite experts (AWS, Azure, GCP etc.), driving innovation and efficiency in your tech landscape.`,
+  Cloud_number: `14,000+`,
+  Cloud_heading: `Pre-Vetted & Certified SAP Experts`,
+  Cloud_content: `Select from over 14,000 SAP experts who are not just certified but also pre-vetted through rigorous evaluation processes. Our commitment to quality means you collaborate with professionals who bring proven expertise and innovative solutions to your SAP projects.`,
 
   Legacy_imgUrl:
     "https://s3-alpha-sig.figma.com/img/f02e/2b2a/7b1ddfdf89823f8dfc240cd349720b12?Expires=1702252800&Signature=q1k5N4orLPwAmXqToycW2L6rctWKglfGtbpk7lEk219mFFQqWeB4LUZzX2DSc71pkKORYngZmkxYVHLCL59uv47eprjPrVXLHfUkjr8VJ7wQbo1tb-DF1dUvewbqVZCDwWGbc0CLJNBrb2pOX9Q-AAnqGrtMbfjbdAn32dKVQigzShXQ3L6B-H90suCGlplvju~xyXhMKJP18qGqWRJbkgTdFMtoPUa0eGlY-cUAVATcX~TfjKbxh4lJSJak6D8Z-I4~vstnJ6FmwvswF2E~R0AdVS22j2OEaiWfP6~37doykip3EKiFpaaS2Tb8gLf6lPrPliNySVIWoQNguGuDKA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
 
-  Legacy_number: `4000+`,
-  Legacy_heading: `Legacy Modernization Specialists`,
-  Legacy_content: `Revitalize and transform your legacy systems with our deep vetted talent, ensuring seamless modernization and future-readiness.`,
+  Legacy_number: `1200+`,
+  Legacy_heading: `Ready to Deploy SAP Consultants`,
+  Legacy_content: `Benefit from immediate access to more than 1200 SAP consultants who are ready to deploy and integrate seamlessly into your projects. Accelerate your SAP initiatives with experts who are prepared to hit the ground running, ensuring minimal downtime and maximum productivity.`,
 
   varsatile_content:"With diverse expertise and a commitment to excellence, our vast network empowers us to address a myriad of needs and consistently provide high-quality solutions.",
 
@@ -92,18 +93,23 @@ export const HomePageText = {
   // SectionTitle ->  // Deploy On-Demand Deep Vetted Developers
   //  ---------------------------------------------------------------------------------------------------------------------------
 
-  thirdHeadingH1: `Deploy Deep-Vetted Developers On Demand `,
-  thirdPara: `Transform your tech capabilities with our on-demand SAP, Cloud, and Legacy experts, chosen through a rigorous vetting process that combines Artificial Intelligence, External Assessments, and Human Insights for unmatched expertise and fit. `,
+  thirdHeadingH1: `Specialized SAP Talent at Your Fingertips`,
+  thirdSubHeadingH2_1:`Unlock the Full Potential of Your SAP Investments with Our Expert Talent Pool`,
+  thirdSubHeadingH2_2:`Effortlessly Deploy SAP Experts On Demand and Scale Your Projects with Confidence`,
+  thirdPara: `We offer a seamless and efficient talent acquisition process powered by advanced AI technology. Discover how our AI-driven solutions enable you to deploy SAP experts on demand, scale your projects, and achieve your business objectives with confidence.`,
 
   //Accordion Content Starts
-  accodiaonHeading1: `Global Talent Hub`,
-  accordionContent1: `Tap into our expansive network of rigorously vetted SAP, Cloud, and Legacy experts across the globe, ensuring you have access to premier tech talent wherever your business takes you`,
+  accodiaonHeading1: `Comprehensive SAP Expertise`,
+  accordionContent1: `Delve into our rich ecosystem of SAP talent, where each consultant is a beacon of knowledge and experience. Our platform hosts a diverse array of SAP experts, from functional and technical consultants to SAP project managers and solution architects, each vetted to ensure they bring not only skills but also innovative solutions to your SAP challenges.`,
 
-  accodiaonHeading2: `Customized Elastic Teams`,
-  accordionContent2: `Tailor your tech force to fit your project's unique demands. Our elastic teams adapt in size and skill to match your evolving project needs, providing the right experts at the right time.`,
+  accodiaonHeading2: `Tailored SAP Solutions`,
+  accordionContent2: `Whether you're implementing SAP S/4HANA, optimizing SAP BW/4HANA processes, or seeking expertise in niche modules like SAP SuccessFactors or SAP Ariba, our talent cloud is your go-to source. We provide precisely matched SAP professionals who are adept at tailoring their approach to meet your unique business needs and project goals.`,
 
   accodiaonHeading3: `Scalable Agile Solutions`,
   accordionContent3: `Grow and adapt without limits. We ensure you have tech talent to scale up or pivot as your industry evolves, offering unparalleled flexibility and resilience in a fast-evolving tech landscape.`,
+
+  accodiaonHeading4: `Accelerate Your SAP Journey`,
+  accordionContent4: `Experience the synergy of speed and precision as our AI-driven platform swiftly connects you with the ideal SAP talent. Say goodbye to prolonged talent searches and embrace a streamlined pathway to accelerating your SAP projects, ensuring you stay ahead in the fast-evolving digital landscape.`,
 
   vettingDevelopersImgUrl: `https://s3-alpha-sig.figma.com/img/bc80/5b37/b5b8ce8b91bf6a78c8131b7e9b55aa80?Expires=1702252800&Signature=lbY3EUEp10~GlSAXqPz0PGYiNLXe7lIJeM20wFIjDfe57BBgujuwQNA1H0DGp1Ixfl-dB5s0JeacwyqN-jrw4kxP6t7JK8~NQzf--25bzXV0wQbWuj9GKRN-GkoRy442EHjxQskUEOTLUgR2y4U8r~2f-KjhJr6nHVZjMtlg8M9Zpl39F8tYs~XxT5yAKJ19SjlljxU5VT7Hzj9nN8Aq6HBeM5YICWdFCin7XDJKEVa4S5SyhtMM2axuWwKHiniKEyj1bmBJZaQANdKjX0nnKGTZNwE8kCj8msxzfj49IfW2gTVKRrwUuvr~DdHS4BV~UaDKvugBwSO-jROShiBidw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4`,
 
@@ -136,8 +142,8 @@ export const HomePageText = {
   // SectionTitle -> Why Choose Our Developers? Sections
   //  ---------------------------------------------------------------------------------------------------------------------------
 
-  whyOurDevelopersHeading: `Why Choose Our Developers?`,
-  whyOurDevelopersPara: `Our elite developers offer you the competitive edge you need.`,
+  whyOurDevelopersHeading: `Why Choose Our Elite SAP Consultants?`,
+  whyOurDevelopersPara: `Discover the Unrivaled Expertise and Dedication of Our SAP Consultants for Your Project Success`,
 
   whyOurDevelopersSubHeading1: `Fast Deployment`,
   whyOurDevelopersSubPara1: `We prioritize a swift 4-hour turnaround, ensuring you can deploy top-tier talent when you need it.`,
@@ -150,8 +156,10 @@ export const HomePageText = {
 
   whyOurDevelopersImage: `https://s3-alpha-sig.figma.com/img/42e7/8b9f/7bcf80c32e55528e0b1870bfaf57ff1e?Expires=1702857600&Signature=UIAK2fEdQLHcf8oW86aNipe0eUXAAgomKYuW60L97Bwgy8XdlUKnMGDJ4ZnpPQUzQoPrbvrL5avkrizN8ArUYiXZQX5Oz5XJFe-4zwbfbpiD1FrUwA03yvqXKuwF3Z8jyGSSZQbQh9ddp1zt17HUVw8BZeYdF69boufuo-cuoAS0N3XhPk8EjKu8tdQjFmPho6LnwexzmdzBaX1BRY3ZkcnQr-ESmSMgBj8Q0MJJ3v7vnRqFD9~0aq9EArzaSarVBcIb8GS0Dp3gSBHDlkOSccHCvl2S~TcVIHxe7~JQJqa1zaKhremonK1lijuHiftyk6nKiJXuBFSzAly8BUV2Mg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4`,
 
-  paraPoints: ["We prioritize a swift 4-hour turnaround, ensuring you can deploy top-tier talent when you need it.", "Our AI technology meticulously vets each developer, assuring you of their qualifications and expertise.",
-    "With a diverse skill set ranging from SAP and Cloud to Legacy systems, our developers can address an array of technical challenges."
+  whyOurDevelopersKeyPoint:`At SkillsCapital, our elite SAP consultants stand out for their unparalleled expertise, dedication, and commitment to delivering exceptional results. Learn why businesses trust our consultants to drive their SAP projects to success.`,
+
+  paraPoints: ["Our SAP consultants undergo rigorous vetting processes powered by cutting-edge AI technology. This ensures that only the most qualified and capable consultants are selected for your projects. By leveraging AI for vetting, we guarantee unmatched quality and expertise in every consultant we provide, giving you peace of mind and confidence in the capabilities of your SAP team.", "With our streamlined processes and agile deployment strategies, our SAP consultants can be onboarded and ready to contribute to your projects in record time. Whether you need support for urgent initiatives or want to kickstart your SAP implementation without delays, our fast deployment capabilities ensure that you can harness the expertise of our consultants precisely when you need it.",
+    "When you choose our SAP consultants, you're tapping into a pool of top-tier talent with cutting-edge expertise in the latest SAP technologies and solutions. Whether you're looking to implement SAP S/4HANA, optimize your supply chain with SAP Ariba, or streamline financial processes with SAP Finance, our consultants have the skills and know-how to deliver results."
   ],
 
   pointsIcons: [`https://cdn-icons-png.flaticon.com/512/5554/5554495.png`, `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnWDBm2vLn9Ij3UJ4I9n4X1v7O4_sEbk6PB1x368ia7MetDmUeFIOZGczVt7jWnO6bWYs&usqp=CAU`,
@@ -218,19 +226,19 @@ export const HomePageText = {
 
   whyUsCard1Heading: `Client-Centric Approach`,
   whyUsCard1Points: [
-    "Tailored to your needs",
-    "Track record of success",
-    "Easy team assimilation",
-    "24/7 support & guidance",
+    "Specialized SAP Focus",
+    "AI-Powered Precision",
+    "Proven Track Record",
+    "24/7 Dedicated Support",
   ],
   whyUsCard1ImgUrl: "https://offshoreteam.io/wp-content/uploads/2023/11/deeply-vetted.jpg",
 
   whyUsCard2Heading: `Focused on Your Success`,
   whyUsCard2Points: [
-    "Goal Alignment",
-    "Strategic Execution",
-    "Outcome Driven",
-    "Business Continuity",
+    "On-Demand Deployment",
+    "Vast SAP Talent Pool",
+    "Agile & Scalable",
+    "Outcome-Driven",
   ],
   whyUsCard2ImgUrl: "https://img.freepik.com/premium-vector/time-zones-flat-style-illustration-design_538610-653.jpg",
 

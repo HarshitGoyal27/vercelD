@@ -32,6 +32,7 @@ interface Option {
   id: number;
   label: string;
 }
+
 interface Candidates {
   Name: string;
   Email: string;
@@ -44,6 +45,7 @@ interface Candidates {
   Salary: string;
   PrefferedLocation: string;
   CurrentLocation: string;
+  MayAlsoKnow: string;
 }
 
 interface Profile {
@@ -54,6 +56,8 @@ interface Profile {
   Skill_Name_Version: string;
   Certification: string;
   Preferred_Industry_Domain: string;
+  minExp:string;
+  maxExp:string;
 }
 interface Skill_Info {
   skill_name: string;
@@ -71,6 +75,8 @@ const Form: React.FC = () => {
   const [profiles, setProfile] = useState<Profile>({
     Skill_Set: "",
     Experience_in_Years: "",
+    minExp:"",
+    maxExp:"",
     Current_Location: "",
     Current_Timezone: "",
     Skill_Name_Version: "",
@@ -102,10 +108,30 @@ const Form: React.FC = () => {
   const [filterOption, setFilterOption] = useState("");
   const [touched, setTouched] = useState(false);
   const [salary, setSalary] = useState<string>();
+
+  const [expandedRow, setExpandedRow] = useState(null);
+
+
+  const toggleRow = (index:any) => {
+    setExpandedRow(expandedRow === index ? null : index);
+  };
+
+  const handleMinExperienceChange=async(event:any)=>{
+      console.log('Min expericene',event.target.value);
+      setProfile({ ...profiles, minExp: event.target.value });
+      
+  }
+
+  const handleMaxExperienceChange=async(event:any)=>{
+    console.log('Max expericene',event.target.value);
+    setProfile({ ...profiles, maxExp: event.target.value });
+  }
+
   const handleSubmit = async (
     e: React.FormEvent<HTMLFormElement>
   ): Promise<void> => {
     setLoading(true);
+    console.log("AAAA", profiles);
     if (profiles.Skill_Set) {
       setShowAskClient(true);
       setGetAllCandidate(true);
@@ -117,11 +143,19 @@ const Form: React.FC = () => {
     }
 
     try {
+      console.log("-------->", profiles, pageNumber);
       const resp = await axios.post(`${DEV_PUBLIC_URL}form/candidates`, {
         profiles,
         pageNumber,
       });
       const candidates = resp.data.data.candidatesData;
+      let arr = [
+        candidates[0],
+        candidates[1],
+        candidates[2],
+        candidates[3],
+        candidates[4],
+      ];
       console.log("yoyo", candidates);
       setLoading(false);
       setEliteButtonClicked(true);
@@ -129,8 +163,8 @@ const Form: React.FC = () => {
         setApiResponse([]);
         setApiDummyResponse([]);
       } else if (candidates.length !== 0) {
-        setApiResponse(candidates);
-        setApiDummyResponse(candidates);
+        setApiResponse(arr);
+        setApiDummyResponse(arr);
       } else {
         setApiResponse([]);
         setApiDummyResponse([]);
@@ -347,6 +381,7 @@ const Form: React.FC = () => {
   };
 
   useEffect(() => {
+    console.log('AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',apiResponse);
     const allIDs = apiResponse.map((item) => item.id);
     const allNumbersPresent = allIDs.every((id) => selectedId.includes(id));
     if (allNumbersPresent) {
@@ -420,7 +455,7 @@ const Form: React.FC = () => {
               setSelectedValue={setProfile}
               touched={touched}
             />
-            <div
+            {/* <div
               onClick={() => setPluseOpen(!pluseOpen)}
               style={{
                 margin: "50px 25% 30px 25%",
@@ -431,8 +466,8 @@ const Form: React.FC = () => {
                 alignItems: "center",
                 display: "flex",
               }}
-            >
-              <div style={{ width: "93%", cursor: "pointer", display: "flex" }}>
+            > */}
+            {/* <div style={{ width: "93%", cursor: "pointer", display: "flex" }}>
                 {AllskillInfo.length !== 0 ? (
                   AllskillInfo.map((item: Skill_Info, index: number) => (
                     <div key={index} className={css.skillBullet}>
@@ -447,9 +482,9 @@ const Form: React.FC = () => {
                     Fill the Information about skills
                   </div>
                 )}
-              </div>
-              <span style={{ fontSize: "40px", cursor: "pointer" }}>+</span>
-            </div>
+              </div> */}
+            {/* <span style={{ fontSize: "40px", cursor: "pointer" }}>+</span> */}
+            {/* </div> */}
             {pluseOpen && (
               <div className={css.topbarsmallboxContainer}>
                 <div className={css.topbarsmallbox}>
@@ -545,34 +580,53 @@ const Form: React.FC = () => {
               margin="normal"
               style={{ margin: '20px 25%', width: '50%' }}
             /> */}
-              <FormControl sx={{ margin: "20px 25%", width: "50%" }}>
-                <InputLabel>Experience</InputLabel>
-                <Select
-                  value={
-                    profiles.Experience_in_Years === undefined
-                      ? ""
-                      : profiles.Experience_in_Years
-                  }
-                  onChange={handleExpChange}
-                  label="Experience"
-                  displayEmpty
-                  inputProps={{ "aria-label": "Without label" }}
-                  MenuProps={{
-                    PaperProps: {
-                      style: {
-                        maxHeight: 200,
+              <div>
+                <FormControl sx={{ margin: "20px 0px 0px 25%", width: "25%" }}>
+                  <InputLabel>Minimum Experience</InputLabel>
+                  <Select
+                    label="Minimum Experience"
+                    displayEmpty
+                    inputProps={{ "aria-label": "Without label" }}
+                    onChange={handleMinExperienceChange}
+                    MenuProps={{
+                      PaperProps: {
+                        style: {
+                          maxHeight: 200,
+                        },
                       },
-                    },
-                  }}
-                >
-                  {Array.from({ length: 19 }, (_, index) => (
-                    // Your JSX code here, for example:
-                    <MenuItem key={index} value={index + 2}>
-                      {index + 2}
-                    </MenuItem>
-                  ))}
-                </Select>
-              </FormControl>
+                    }}
+                  >
+                    {Array.from({ length: 19 }, (_, index) => (
+                      <MenuItem key={index} value={index + 2}>
+                        {index + 2}
+                      </MenuItem>
+                    ))}
+                  </Select>
+                </FormControl>
+                <FormControl sx={{ margin: "20px 0px 0px 0px", width: "25%" }}>
+                  <InputLabel>Maximum Experience</InputLabel>
+                  <Select
+                    label="Maximum Experience"
+                    displayEmpty
+                    inputProps={{ "aria-label": "Without label" }}
+                    onChange={handleMaxExperienceChange}
+                    MenuProps={{
+                      PaperProps: {
+                        style: {
+                          maxHeight: 200,
+                        },
+                      },
+                    }}
+                  >
+                    {Array.from({ length: 19 }, (_, index) => (
+                      <MenuItem key={index} value={index + 2}>
+                        {index + 2}
+                      </MenuItem>
+                    ))}
+                  </Select>
+                </FormControl>
+              </div>
+
               <FormControl sx={{ margin: "20px 25%", width: "50%" }}>
                 <InputLabel>Salary</InputLabel>
                 <Select
@@ -848,9 +902,9 @@ const Form: React.FC = () => {
                     />
                   </div>
                   <Paper elevation={3} className={css.paperr}>
-                    <div className={css.Name}>{profile.Name}</div>
-                    <div style={{ display: "flex" }}>
-                      <div className={css.box1}>
+                    <div>{profile.Name}</div>
+                    <div style={{ display: "flex", height: "90%" }}>
+                      <div className={css.iconbox}>
                         <div className={css.icons}>
                           <div style={{ display: "flex" }}>
                             <BusinessCenterIcon />
@@ -870,22 +924,21 @@ const Form: React.FC = () => {
                           </div>
                         </div>
                         <div className={css.infobox}>
-                            
-                              <div>Current</div>
-                              <div>{profile.CurrentRole}</div>
-                          
-                      
-                              <div>Previous</div>
-                              <div>{profile.PreviousRole}</div>
-                            
-                              <div>Education</div>
-                              <div>EFG</div>
-                            
-                            
-                              <div>Key Skills</div>
-                              <div>{profile.Skills}</div>
-                            
-                          </div>
+                          <div>Current</div>
+                          <div>{profile.CurrentRole}</div>
+
+                          <div>Previous</div>
+                          <div>{profile.PreviousRole}</div>
+
+                          <div>Education</div>
+                          <div>EFG</div>
+
+                          <div>Key Skills</div>
+                          <div>{profile.Skills}</div>
+
+                          <div>May also know</div>
+                          <div>{profile.MayAlsoKnow}</div>
+                        </div>
                       </div>
                       <div className={css.box2}>
                         <div>

@@ -9,6 +9,7 @@ import CustomButton from "@/components/atoms/button";
 type ContentComponentProps = {
   heading: string;
   subHeading: string;
+  para:string;
   points: string[];
   pointsIcons: string[];
   paraPoints: string[];
@@ -26,6 +27,7 @@ type ContentComponentProps = {
 const ContentComponent: React.FC<ContentComponentProps> = ({
   heading,
   subHeading,
+  para,
   points,
   pointsIcons,
   paraPoints,
@@ -47,7 +49,7 @@ const ContentComponent: React.FC<ContentComponentProps> = ({
     <>
       {order === "imageLeft" ? (
         <div style={{ display: "flex",justifyContent:"center"}}>
-          <div style={{}}>
+          <div>
             <Image
               src={imageUrl}
               alt={altText}
@@ -61,9 +63,11 @@ const ContentComponent: React.FC<ContentComponentProps> = ({
 
             <h3 className={homePageStyle.whyUsMainSubHeading}>{subHeading}</h3>
 
+            <p className={homePageStyle.whyUsPara}>{para}</p>
+
             <br />
             <br />
-            <br />
+            
 
             <ul style={ulLiStyle}>
               {points.map((point, index) => (
