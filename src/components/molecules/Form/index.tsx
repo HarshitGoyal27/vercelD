@@ -46,6 +46,7 @@ interface Candidates {
   PrefferedLocation: string;
   CurrentLocation: string;
   MayAlsoKnow: string;
+  Education:string;
 }
 
 interface Profile {
@@ -842,7 +843,7 @@ const Form: React.FC = () => {
                           <div>{profile.PreviousRole}</div>
 
                           <div>Education</div>
-                          <div>EFG</div>
+                          <div>{profile.Education}</div>
 
                           <div>Key Skills</div>
                           <div>{profile.Skills}</div>
