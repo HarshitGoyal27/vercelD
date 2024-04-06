@@ -155,6 +155,11 @@ const Form: React.FC = () => {
         candidates[2],
         candidates[3],
         candidates[4],
+        candidates[5],
+        candidates[6],
+        candidates[7],
+        candidates[8],
+        candidates[9]
       ];
       console.log("yoyo", candidates);
       setLoading(false);
