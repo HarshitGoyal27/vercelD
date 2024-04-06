@@ -75,7 +75,7 @@ export default function Home({ allData }: { allData: any }) {
               <div className={homePageStyle.topTwoButtons}>
                 <Link href="/hire-developers">
                   <CustomButton2
-                    label={"Hire Elite Talent"}
+                    label={"Hire SAP Talent"}
                     buttonStyle={{
                       color: "white",
                       borderRadius: "25px",
@@ -106,7 +106,7 @@ export default function Home({ allData }: { allData: any }) {
                 </Link>
 
                 <CustomButton2
-                  label={"Explore Talent Pool"}
+                  label={"Explore Specialized Talent"}
                   onClick={launchCareerJourneyClicked}
                   buttonStyle={{
                     color: "#2871FF",
@@ -238,7 +238,7 @@ export default function Home({ allData }: { allData: any }) {
               headingNumber={HomePageText.SAP_number}
               headingText={HomePageText.SAP_heading}
               paragraphText={HomePageText.SAP_content}
-              buttonText="Connect with SAP Talent Today - Elevate Your SAP Capabilities"
+              buttonText="Explore"
               onButtonClick={handleButtonExplore}
               buttonEnabled={true}
             />
@@ -249,7 +249,7 @@ export default function Home({ allData }: { allData: any }) {
               headingNumber={HomePageText.Cloud_number}
               headingText={HomePageText.Cloud_heading}
               paragraphText={HomePageText.Cloud_content}
-              buttonText="Connect with SAP Talent Today - Elevate Your SAP Capabilities"
+              buttonText="Explore"
               onButtonClick={handleButtonExplore}
               buttonEnabled={true}
             />
@@ -260,7 +260,7 @@ export default function Home({ allData }: { allData: any }) {
               headingNumber={HomePageText.Legacy_number}
               headingText={HomePageText.Legacy_heading}
               paragraphText={HomePageText.Legacy_content}
-              buttonText="Connect with SAP Talent Today - Elevate Your SAP Capabilities"
+              buttonText="Explore"
               onButtonClick={handleButtonExplore}
               buttonEnabled={true}
             />
@@ -297,11 +297,6 @@ export default function Home({ allData }: { allData: any }) {
                   title={HomePageText.accodiaonHeading3}
                   content={HomePageText.accordionContent3}
                 />
-                <br />
-                <AccordionComponent
-                  title={HomePageText.accodiaonHeading4}
-                  content={HomePageText.accordionContent4}
-                />
               </div>
               <div>
                 <Image
@@ -324,10 +319,10 @@ export default function Home({ allData }: { allData: any }) {
             <br />
             <br />
             <h2 style={cardsStyling.sapCloudLegacyMainHeading}>
-              {HomePageText.secondHeading_h1}
+              {HomePageText.secondHeading2_h1}
             </h2>
             <br />
-            <h3 style={cardsStyling.sapCloudLegacySubHeading}>{HomePageText.secondSubHeading_h2}</h3>
+            <h3 style={cardsStyling.sapCloudLegacySubHeading}>{HomePageText.secondSubHeading2_h2}</h3>
             <br />
           </div>
           <div className="cards" style={commonStyle.dflex_1}>
@@ -383,12 +378,11 @@ export default function Home({ allData }: { allData: any }) {
             points={[
               HomePageText.whyOurDevelopersSubHeading1,
               HomePageText.whyOurDevelopersSubHeading2,
-              HomePageText.whyOurDevelopersSubHeading3,
-              HomePageText.whyOurDevelopersSubHeading4
+              HomePageText.whyOurDevelopersSubHeading3
             ]}
             paraPoints={HomePageText.paraPoints}
             noOflogoImages={3}
-            logoImagesUrl={[`1`, "2", "3","4"]}
+            logoImagesUrl={[`1`, "2", "3"]}
             buttonEnable={false}
           />
         </section>
