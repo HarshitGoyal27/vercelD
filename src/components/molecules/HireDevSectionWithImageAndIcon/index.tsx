@@ -7,6 +7,7 @@ import { ulLiStyle } from '@/constants/commonStyle';
 type HireDevSectionWithImageAndIconProps = {
   heading: string;
   subHeading: string;
+  content:string;
   points: string[];
   pointsIcons: string[];
   paraPoints: string[];
@@ -26,6 +27,7 @@ const HireDevSectionWithImageAndIcon: React.FC<
 > = ({
   heading,
   subHeading,
+  content,
   points,
   pointsIcons,
   paraPoints,
@@ -72,7 +74,6 @@ const HireDevSectionWithImageAndIcon: React.FC<
               <h3 id={styles.hireDevSectionIconSubHeading}>
                 {subHeading}
               </h3>
-
               <br />
 
               <ul style={ulLiStyle}>
@@ -147,6 +148,8 @@ const HireDevSectionWithImageAndIcon: React.FC<
               <h3 id={styles.hireDevSectionIconSubHeading}>
                 {subHeading}
               </h3>
+
+              <p id={styles.hireDevSectionContent}>{content}</p>
 
               <br />
 

@@ -240,6 +240,7 @@ const HireDeveloper = () => {
                 pointsIcons={HireDeveloperPageText.superChargePointsIcons}
                 heading={HireDeveloperPageText.superchargeHiringHeading}
                 subHeading={HireDeveloperPageText.superchargeHiringSubHeading}
+                content={HireDeveloperPageText.superchargeHiringContent}
                 noOfPoints={3}
                 points={[
                   HireDeveloperPageText.superchargeHiringPoint1,
@@ -263,6 +264,7 @@ const HireDeveloper = () => {
                 pointsIcons={HireDeveloperPageText.perfectMatchPointsIcons}
                 heading={HireDeveloperPageText.perfectMatchHeading}
                 subHeading={HireDeveloperPageText.superchargeHiringSubHeading}
+                content={HireDeveloperPageText.superchargeHiringContent}
                 noOfPoints={3}
                 points={[
                   HireDeveloperPageText.perfectMatchPoint1,

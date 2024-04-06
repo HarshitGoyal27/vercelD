@@ -242,7 +242,6 @@ export default function Home({ allData }: { allData: any }) {
               onButtonClick={handleButtonExplore}
               buttonEnabled={true}
             />
-
             <CardComponent
               imageUrl={"/HomePageImages/2-CloudImage.png"}
               imageHeight={210}
@@ -317,7 +316,269 @@ export default function Home({ allData }: { allData: any }) {
         </section>
       </main>
 
-      <section>
+      <section id={homePageStyle.ourEliteNetwork} >
+        <div
+          style={{ background: "#F1F1F1", padding: "10px 100px 50px 100px" }}
+        >
+          <div style={commonStyle.textCenter}>
+            <br />
+            <br />
+            <h2 style={cardsStyling.sapCloudLegacyMainHeading}>
+              {HomePageText.secondHeading_h1}
+            </h2>
+            <br />
+            <h3 style={cardsStyling.sapCloudLegacySubHeading}>{HomePageText.secondSubHeading_h2}</h3>
+            <br />
+          </div>
+          <div className="cards" style={commonStyle.dflex_1}>
+            <CardComponent
+                imageUrl={"/HomePageImages/1-SAP.png"}
+                imageHeight={210}
+                imageWidth={250}
+                headingNumber={HomePageText.SAP_number2}
+                headingText={HomePageText.SAP_heading2}
+                paragraphText={HomePageText.SAP_content2}
+                buttonText="Explore Now"
+                onButtonClick={handleButtonExplore}
+                buttonEnabled={true}
+              />
+            <CardComponent
+              imageUrl={"/HomePageImages/2-CloudImage.png"}
+              imageHeight={210}
+              imageWidth={250}
+              headingNumber={HomePageText.Cloud_number2}
+              headingText={HomePageText.Cloud_heading2}
+              paragraphText={HomePageText.Cloud_content2}
+              buttonText="Explore Now"
+              onButtonClick={handleButtonExplore}
+              buttonEnabled={true}
+            />
+            <CardComponent
+              imageUrl={"/HomePageImages/3-LegacyImage.png"}
+              imageHeight={210}
+              imageWidth={250}
+              headingNumber={HomePageText.Legacy_number2}
+              headingText={HomePageText.Legacy_heading2}
+              paragraphText={HomePageText.Legacy_content2}
+              buttonText="Explore Now"
+              onButtonClick={handleButtonExplore}
+              buttonEnabled={true}
+            />
+          </div>
+        </div>
+      </section>
+      <main >
+        <section className={homePageStyle.chooseDeveloper} >
+          <ContentComponent
+            imageUrl={"/HomePageImages/WhyUs.png"}
+            altText={"WhySkillsCapitalDev"}
+            Imgheight={550}
+            Imgwidth={500}
+            order="imageLeft"
+            pointsIcons={HomePageText.pointsIcons}
+            heading={HomePageText.whyOurDevelopersHeading}
+            subHeading={HomePageText.whyOurDevelopersPara}
+            para={HomePageText.whyOurDevelopersKeyPoint}
+            noOfPoints={4}
+            points={[
+              HomePageText.whyOurDevelopersSubHeading1,
+              HomePageText.whyOurDevelopersSubHeading2,
+              HomePageText.whyOurDevelopersSubHeading3,
+              HomePageText.whyOurDevelopersSubHeading4
+            ]}
+            paraPoints={HomePageText.paraPoints}
+            noOflogoImages={3}
+            logoImagesUrl={[`1`, "2", "3","4"]}
+            buttonEnable={false}
+          />
+        </section>
+      </main>
+
+      <section >
+        <div className={homePageStyle.worldMapStyle} >
+          <div style={{ padding: "60px 0px 60px 60px", position: "absolute", zIndex: "1" }}>
+            <h1 style={worldMap.heading}>{HomePageText.worldMapHeading}</h1>
+
+            <p style={worldMap.para}>{HomePageText.worldMapPara}</p>
+
+            <br />
+            <br />
+            <div
+              style={{
+                display: "flex",
+                alignItems: "flex-start",
+                gap: "80px",
+              }}
+            >
+              <div>
+                <div style={worldMap.worldMapNumber}>
+                  {HomePageText.worldMapNum1}
+                </div>
+                <span style={worldMap.worldMapNumberTitle}>
+                  {HomePageText.worldMapNum1Title}
+                </span>
+              </div>
+              <div>
+                <div style={worldMap.worldMapNumber}>
+                  {HomePageText.worldMapNum2}
+                </div>
+                <span style={worldMap.worldMapNumberTitle}>
+                  {HomePageText.worldMapNum2Title}
+                </span>
+              </div>
+              <div>
+                <div style={worldMap.worldMapNumber}>
+                  {HomePageText.worldMapNum3}
+                </div>
+                <span style={worldMap.worldMapNumberTitle}>
+                  {HomePageText.worldMapNum3Title}
+                </span>
+              </div>
+
+              <br />
+            </div>
+            <br />
+            <br />
+            <br />
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "start",
+                gap: "40px",
+                width: "40vw",
+              }}
+            >
+              <CustomButton2
+                label={HomePageText.worldMapButton1}
+                onClick={HireDeveloperClicked}
+                buttonStyle={{
+                  color: "#2871FF",
+                  borderRadius: "5px",
+                  background: "#FFF",
+                  fontSize: "18px",
+                  padding: "10px 25px",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  gap: "10px",
+                }}
+                hoverStyle={{
+                  color: "#FFF",
+                  borderRadius: "5px",
+                  background: "#2871FF",
+                  fontSize: "18px",
+                  border: "2px solid #FFF",
+                  padding: "10px 25px",
+                  justifyContent: "center",
+                  boxShadow: " 0px 2px 2px smokeWhite",
+                  alignItems: "center",
+                  gap: "10px",
+                }}
+              />
+              <CustomButton2
+                label={HomePageText.worldMapButton2}
+                onClick={ApplyForJobsClicked}
+                buttonStyle={{
+                  color: "#FFF",
+                  borderRadius: "5px",
+                  background: "#2871FF",
+                  fontSize: "18px",
+                  border: "2px solid #FFF",
+                  padding: "10px 25px",
+                  justifyContent: "center",
+                  boxShadow: " 0px 2px 2px smokeWhite",
+                  alignItems: "center",
+                  gap: "10px",
+                }}
+                hoverStyle={{
+                  color: "#2871FF",
+                  borderRadius: "5px",
+                  background: "#FFF",
+                  fontSize: "18px",
+                  padding: "10px 25px",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  gap: "10px",
+                }}
+              />
+            </div>
+          </div>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignContent: "center",
+              alignItems: "center",
+              position: "relative"
+            }}
+          >
+            <Image
+              src={"/HomePageImages/WorldImage.png"}
+              alt="worldMap"
+              width={570}
+              height={380}
+              className={homePageStyle.worldmapImage}
+            />
+          </div>
+        </div>
+      </section>
+      <main >
+        <section style={commonStyle.sectionMargin}>
+          <center>
+            {" "}
+            <h2 className={homePageStyle.whyChooseUs2}>
+              {HomePageText.whyUsHeading}
+            </h2>{" "}
+          </center>
+
+          <div className={homePageStyle.threeCardStyle} >
+            <StructureCard
+              imageUrl={"/HomePageImages/deeply-vetted1.jpg"}
+              imageHeight={300}
+              imageWidth={350}
+              cardHeading={HomePageText.whyUsCard1Heading}
+              altText="skillsCapital"
+              bulletPoints={HomePageText.whyUsCard1Points}
+            />
+            <SpecialCard
+              cardHeading={HomePageText.whyUsMainCardHeading}
+              points={HomePageText.whyUsMainCardPoints}
+              logoImages={HomePageText.whyUsMainCardBulletIcons}
+              btnLabel={HomePageText.whyUsMainCardButton}
+            />
+            <StructureCard
+              imageUrl={"/HomePageImages/whychoose-2.png"}
+              imageHeight={280}
+              imageWidth={280}
+              cardHeading={HomePageText.whyUsCard2Heading}
+              altText="skillsCapital"
+              bulletPoints={HomePageText.whyUsCard2Points}
+            />
+          </div>
+        </section>
+
+        <section className={homePageStyle.speedcard} >
+          <div className={homePageStyle.speedQualityContainer}>
+            <SpeedQualityCard
+              title={HomePageText.speedHeading}
+              subheading={HomePageText.speedSubHeading}
+              imageSrc={"/HomePageImages/5-SpeedImage.png"}
+              imageHeight={250}
+              imageWidth={300}
+              paragraph={HomePageText.speedPara}
+            />
+            <SpeedQualityCard
+              title={HomePageText.QualityHeading}
+              subheading={HomePageText.QualitySubHeading}
+              imageSrc={"/HomePageImages/6-QualityImage.png"}
+              imageHeight={230}
+              imageWidth={300}
+              paragraph={HomePageText.qualityPara}
+            />
+          </div>
+        </section>
+
+
+        <section>
         <div className={homePageStyle.backGroundBlueHomePage}>
           <div>
             <h1 id={hireDevStyles.heading}>
@@ -483,216 +744,6 @@ export default function Home({ allData }: { allData: any }) {
           </div>
         </div>
       </section>
-      <main >
-        <section className={homePageStyle.chooseDeveloper} >
-          <ContentComponent
-            imageUrl={"/HomePageImages/WhyUs.png"}
-            altText={"WhySkillsCapitalDev"}
-            Imgheight={550}
-            Imgwidth={500}
-            order="imageLeft"
-            pointsIcons={HomePageText.pointsIcons}
-            heading={HomePageText.whyOurDevelopersHeading}
-            subHeading={HomePageText.whyOurDevelopersPara}
-            para={HomePageText.whyOurDevelopersKeyPoint}
-            noOfPoints={4}
-            points={[
-              HomePageText.whyOurDevelopersSubHeading1,
-              HomePageText.whyOurDevelopersSubHeading2,
-              HomePageText.whyOurDevelopersSubHeading3,
-              HomePageText.whyOurDevelopersSubHeading4
-            ]}
-            paraPoints={HomePageText.paraPoints}
-            noOflogoImages={3}
-            logoImagesUrl={[`1`, "2", "3","4"]}
-            buttonEnable={false}
-          />
-        </section>
-
-        <section className={homePageStyle.speedcard} >
-          <div className={homePageStyle.speedQualityContainer}>
-            <SpeedQualityCard
-              title={HomePageText.speedHeading}
-              subheading={HomePageText.speedSubHeading}
-              imageSrc={"/HomePageImages/5-SpeedImage.png"}
-              imageHeight={250}
-              imageWidth={300}
-              paragraph={HomePageText.speedPara}
-            />
-            <SpeedQualityCard
-              title={HomePageText.QualityHeading}
-              subheading={HomePageText.QualitySubHeading}
-              imageSrc={"/HomePageImages/6-QualityImage.png"}
-              imageHeight={230}
-              imageWidth={300}
-              paragraph={HomePageText.qualityPara}
-            />
-          </div>
-        </section>
-      </main>
-
-      <section >
-        <div className={homePageStyle.worldMapStyle} >
-          <div style={{ padding: "60px 0px 60px 60px", position: "absolute", zIndex: "1" }}>
-            <h1 style={worldMap.heading}>{HomePageText.worldMapHeading}</h1>
-
-            <p style={worldMap.para}>{HomePageText.worldMapPara}</p>
-
-            <br />
-            <br />
-            <div
-              style={{
-                display: "flex",
-                alignItems: "flex-start",
-                gap: "80px",
-              }}
-            >
-              <div>
-                <div style={worldMap.worldMapNumber}>
-                  {HomePageText.worldMapNum1}
-                </div>
-                <span style={worldMap.worldMapNumberTitle}>
-                  {HomePageText.worldMapNum1Title}
-                </span>
-              </div>
-              <div>
-                <div style={worldMap.worldMapNumber}>
-                  {HomePageText.worldMapNum2}
-                </div>
-                <span style={worldMap.worldMapNumberTitle}>
-                  {HomePageText.worldMapNum2Title}
-                </span>
-              </div>
-              <div>
-                <div style={worldMap.worldMapNumber}>
-                  {HomePageText.worldMapNum3}
-                </div>
-                <span style={worldMap.worldMapNumberTitle}>
-                  {HomePageText.worldMapNum3Title}
-                </span>
-              </div>
-
-              <br />
-            </div>
-            <br />
-            <br />
-            <br />
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "start",
-                gap: "40px",
-                width: "40vw",
-              }}
-            >
-              <CustomButton2
-                label={HomePageText.worldMapButton1}
-                onClick={HireDeveloperClicked}
-                buttonStyle={{
-                  color: "#2871FF",
-                  borderRadius: "5px",
-                  background: "#FFF",
-                  fontSize: "18px",
-                  padding: "10px 25px",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  gap: "10px",
-                }}
-                hoverStyle={{
-                  color: "#FFF",
-                  borderRadius: "5px",
-                  background: "#2871FF",
-                  fontSize: "18px",
-                  border: "2px solid #FFF",
-                  padding: "10px 25px",
-                  justifyContent: "center",
-                  boxShadow: " 0px 2px 2px smokeWhite",
-                  alignItems: "center",
-                  gap: "10px",
-                }}
-              />
-              <CustomButton2
-                label={HomePageText.worldMapButton2}
-                onClick={ApplyForJobsClicked}
-                buttonStyle={{
-                  color: "#FFF",
-                  borderRadius: "5px",
-                  background: "#2871FF",
-                  fontSize: "18px",
-                  border: "2px solid #FFF",
-                  padding: "10px 25px",
-                  justifyContent: "center",
-                  boxShadow: " 0px 2px 2px smokeWhite",
-                  alignItems: "center",
-                  gap: "10px",
-                }}
-                hoverStyle={{
-                  color: "#2871FF",
-                  borderRadius: "5px",
-                  background: "#FFF",
-                  fontSize: "18px",
-                  padding: "10px 25px",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  gap: "10px",
-                }}
-              />
-            </div>
-          </div>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignContent: "center",
-              alignItems: "center",
-              position: "relative"
-            }}
-          >
-            <Image
-              src={"/HomePageImages/WorldImage.png"}
-              alt="worldMap"
-              width={570}
-              height={380}
-              className={homePageStyle.worldmapImage}
-            />
-          </div>
-        </div>
-      </section>
-
-      <main >
-        <section style={commonStyle.sectionMargin}>
-          <center>
-            {" "}
-            <h2 className={homePageStyle.whyChooseUs2}>
-              {HomePageText.whyUsHeading}
-            </h2>{" "}
-          </center>
-
-          <div className={homePageStyle.threeCardStyle} >
-            <StructureCard
-              imageUrl={"/HomePageImages/deeply-vetted1.jpg"}
-              imageHeight={300}
-              imageWidth={350}
-              cardHeading={HomePageText.whyUsCard1Heading}
-              altText="skillsCapital"
-              bulletPoints={HomePageText.whyUsCard1Points}
-            />
-            <SpecialCard
-              cardHeading={HomePageText.whyUsMainCardHeading}
-              points={HomePageText.whyUsMainCardPoints}
-              logoImages={HomePageText.whyUsMainCardBulletIcons}
-              btnLabel={HomePageText.whyUsMainCardButton}
-            />
-            <StructureCard
-              imageUrl={"/HomePageImages/whychoose-2.png"}
-              imageHeight={280}
-              imageWidth={280}
-              cardHeading={HomePageText.whyUsCard2Heading}
-              altText="skillsCapital"
-              bulletPoints={HomePageText.whyUsCard2Points}
-            />
-          </div>
-        </section>
         {/* <section className={homePageStyle.outerContainer}>
           <CompaniesCarausel />
           <div style={{ display: "flex", gap: "100px", marginTop: "200px" }}>

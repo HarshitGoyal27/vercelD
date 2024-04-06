@@ -117,6 +117,17 @@ export const HomePageText = {
   // 3rd Section Ends
   //-------------------------------------------------------------------------------------------------------------------------
 
+  SAP_number2:`7000+`,
+  SAP_heading2:`SAP Specialist Hub`,
+  SAP_content2:`Tap into our pre-vetted and curated team of SAP experts, driving your enterprise solutions with unmatched expertise and precision.`,
+
+  Cloud_number2:`6400+`,
+  Cloud_heading2:`Cloud & DevOps Excellence`,
+  Cloud_content2:`Empower your Cloud & DevOps with our elite experts (AWS, Azure, GCP etc.), driving innovation and efficiency in your tech landscape.`,
+
+  Legacy_number2:`4600+`,
+  Legacy_heading2:`Legacy Modernization Specialists`,
+  Legacy_content2:`Revitalize and transform your legacy systems with our deep vetted talent, ensuring seamless modernization and future-readiness.`,
   //---------------------------------------------------------------------------------------------------------------------------
   // 4th Section Starts
   // SectionTitle -> Top Companies with SkillsCapital with Logo Sections
@@ -331,16 +342,16 @@ export const HireDeveloperPageText = {
   // Supercharge Your Hiring Section
   superchargeHiringHeading: "Supercharge Your Hiring",
   superchargeHiringSubHeading: "Accelerate Your Recruitment Process with Access to Our Premier Network of AI-Vetted Developers, Ready to Join Your Team and Drive Success. ",
-
+  superchargeHiringContent:"Unlock top-tier SAP talent swiftly with our AI-Powered Talent Cloud and our extensive network of SAP experts, ready to join your team and drive success. Our platform empowers you to hire deeply vetted SAP consultants for hard-to-find skills in just 4 hours, ensuring rapid deployment of top-tier talent to meet your project needs.",
   superChargeImageUrl: 'https://s3-alpha-sig.figma.com/img/c3c0/9a76/b799ec591a9b04510feb32c8b88045fc?Expires=1702857600&Signature=p335CYy31~DqKZ2HikkpmUzb9x7I8evMO5CkzHF3NCm0HIwyYXLKzwdasolYJIokFrAqSIsAbScFwMz5jlGy-lDYTaRJz1VdtHnG1PuaGukFNwqherrKPAVnMobVLdLhwvdiZQYzaYR2jEYN3u10UgkQOOlXL0erVJSHDC-PSkXhZeLcmDbm3882iEKo9rpaKy3EnVM9aBosu5jrxGJ5zOCnwSmzZfXiR4Wss4MyBjRWS4QWGq-IEbVA0qHsNFOMIj6D3F5QJMvQF82LdZA3-lVv15cqYwiuUfZ94wSgWjyuBb7-k0pWDsKJxLPhaLrDoq5Q1TO0OBhMI7uXV9r1ow__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4',
 
-  superchargeHiringPoint1: "Unlock top-tier tech talent swiftly",
-  superchargeHiringPoint2: "Navigate skill scarcity effortlessly",
-  superchargeHiringPoint3: "Forge business resilience seamlessly",
+  superchargeHiringPoint1: "Unlock Elite SAP Talent Swiftly",
+  superchargeHiringPoint2: "Navigate SAP Skill Scarcity Effortlessly",
+  superchargeHiringPoint3: "Forge SAP Business Resilience Seamlessly",
 
-  superChargeParaPoints: ["Hire deeply vetted developers for hard-to-find tech skills in just 4 hours with our AI-Powered Talent Cloud and our Global Network Expertise.", 
-  "Specializing in hard-to-find and niche skills, we make the rare seem routine in our expansive talent pool and ensure you connect with right talent.", 
-  `Embrace business continuity seamlessly with our On-Demand Talent Cloud, providing agility in talent acquisition and keeping your projects on track.`
+  superChargeParaPoints: ["Hire deeply vetted SAP consultants for specialized SAP skills in just 4 hours, leveraging our AI-powered platform and global network expertise to accelerate your SAP hiring process.", 
+  "Specializing in hard-to-find SAP skills and niche expertise, we make the rare seem routine in our expansive talent pool, ensuring you connect with the right SAP talent to address skill gaps and project requirements effectively.", 
+  `Embrace SAP business continuity seamlessly with our On-Demand Talent Cloud, providing agility in SAP talent acquisition and keeping your SAP projects on track. Our platform enables you to adapt to changing SAP resource needs swiftly, ensuring resilience in the face of challenges.`
   ],
 
   superChargePointsIcons: [`https://cdn-icons-png.flaticon.com/512/4752/4752567.png`, 'https://cdn-icons-png.flaticon.com/512/2228/2228782.png',
@@ -354,20 +365,20 @@ export const HireDeveloperPageText = {
   // 3rd Section Starts
   //---------------------------------------------------------------------------------------------------------------------------
   //---------------------------------------------------------------------------------------------------------------------------
-  perfectMatchHeading: "Laser Focus on Perfect Match",
-  perfectMatchSubHeading: "Utilize Our Precision Matching System to Ensure You Connect with Developers Whose Skills, Experience, and Work Ethic Align Flawlessly with Your Project Requirements",
+  perfectMatchHeading: "Laser Precision in SAP Talent Matching",
+  perfectMatchSubHeading: "Elevate your SAP recruitment process with our premier network of AI-vetted developers, meticulously selected to drive success in your SAP projects.",
 
   perfectMatchImageUrl: 'https://s3-alpha-sig.figma.com/img/58ee/7db0/288f621c0d8d9eb5c43272ac87f92ecd?Expires=1702857600&Signature=jGWVtthlEOTrxUp8koyKertSORH9uB0dVJJI1b775GmHWvS8KyFV-U3bmQHGrd-e4RBEfX~piNcNIINtPHMVITfsEs102JoFAnLYVFY~GHpN3VUnKBCYjRnqmaKB9qlIev7rU6rjebPAvlfP7iVwI1Rrx2zgoDFLm4PxMROKHO93lvGtw6N3~PIaFZVNqRNnVNcgz12gfDUFEN48yqywNDfia6QKB9YM-VIWCC0bl-LxVzxNoCMGd13CKikU6wlSXdI1zZZETVzUzv6mu8gBBzkbYx7QHLmD8DUDj7H~6ZPonpBKjPKeI1AgWJGVwRgkf~cCJG4r5ToOzbsLhs1hsQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4',
 
-  perfectMatchPoint1: "AI Precision",
-  perfectMatchPoint2: "Expert Curation",
-  perfectMatchPoint3: "Holistic Match",
+  perfectMatchPoint1: "AI Precision for SAP Talent",
+  perfectMatchPoint2: "Expert Curation for SAP Success",
+  perfectMatchPoint3: "Holistic SAP Matches for Organizational Alignment",
 
-  perfectMatchParaPoints: ["Elevate your hiring standards with our advanced AI assessment (AI) for tech skills, achieving a remarkably high accuracy rate in qualification filtering and ensuring swift, precise matches in unprecedented record time.",
+  perfectMatchParaPoints: ["Elevate your hiring standards with our advanced AI assessment tailored for SAP tech skills. Achieve a remarkably high accuracy rate in qualification filtering, ensuring swift and precise matches for your SAP projects.",
 
-    "Drive success by seamlessly integrating external intelligence (EI) from platforms like HackerRank and custom assessments, ensuring meticulous candidate matches and expediting the path to top-tier talent.",
+  "Drive SAP success by seamlessly integrating external intelligence from platforms like HackerRank and custom assessments. Ensure meticulous candidate matches for your SAP projects, expediting the path to top-tier SAP talent.",
 
-    "Harnessing human insights (HI), we align business and culture through talent carefully scouted by expert interviewers ensure soft skills, effective communication, and cultural alignment for a well-rounded organizational match."
+  "Harness human insights to align business and culture through SAP talent carefully scouted by expert interviewers. Ensure soft skills, effective communication, and cultural alignment for a well-rounded organizational match in your SAP team."
   ],
 
   perfectMatchPointsIcons: [`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnWDBm2vLn9Ij3UJ4I9n4X1v7O4_sEbk6PB1x368ia7MetDmUeFIOZGczVt7jWnO6bWYs&usqp=CAU`, `https://cdn-icons-png.flaticon.com/512/943/943158.png`,
@@ -388,9 +399,9 @@ export const HireDeveloperPageText = {
   //---------------------------------------------------------------------------------------------------------------------------
   // 4th Section Starts
   //---------------------------------------------------------------------------------------------------------------------------
-  sapCloudLegacyHeading: "Our Elite Developers",
+  sapCloudLegacyHeading: "Meet Our Elite SAP Talent Pool",
 
-  sapHeading: "SAP Expertise",
+  sapHeading: "Discover the Depth and Diversity of Expertise in Our SAP Talent Community",
   sapSubHeading: "4000 + SAP Certified Professionals On Demand",
   sapPara: "Our developers boast expertise across 20+ SAP specializations, spanning functional, technical, and techno-functional areas in 50+ industries.",
   sapButtonText: "HIRE SAP EXPERTS",
