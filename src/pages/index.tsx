@@ -701,16 +701,7 @@ export default function Home({ allData }: { allData: any }) {
                   style={{ borderRadius: "10px" }}
                 />
               </div>
-              <div style={{ backgroundColor: "white", borderRadius: "10px", width: "00px",height:"100px" }}>
-                <Image
-                  className={hireDevStyles.amazon}
-                  src={`/HireDeveloperImages/company_12.jpeg`}
-                  alt="Logo"
-                  height={90}
-                  width={240}
-                  style={{ marginTop:"0px",borderRadius: "10px" }}
-                />
-              </div>
+              
               <div style={{ backgroundColor: "white", borderRadius: "10px", width: "300px",height:"100px" }}>
                 <Image
                   className={hireDevStyles.amazon}
@@ -721,17 +712,6 @@ export default function Home({ allData }: { allData: any }) {
                   style={{marginTop:"30px", borderRadius: "10px" }}
                 />
               </div>
-              <div style={{ backgroundColor: "white", borderRadius: "10px", width: "300px",height:"100px" }}>
-                <Image
-                  className={hireDevStyles.amazon}
-                  src={`/HireDeveloperImages/company_14.jpg`}
-                  alt="Logo"
-                  height={60}
-                  width={190}
-                  style={{marginTop:"20px", borderRadius: "10px" }}
-                />
-              </div>
-              
 
 
             </div>
