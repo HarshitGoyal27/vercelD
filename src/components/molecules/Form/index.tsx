@@ -539,31 +539,7 @@ const Form: React.FC = () => {
                 </FormControl>
               </div>
 
-              <FormControl sx={{ margin: "20px 25%", width: "50%" }}>
-                <InputLabel>Salary</InputLabel>
-                <Select
-                  value={salary === undefined ? "" : salary}
-                  onChange={handlesalary}
-                  label="Salary"
-                  displayEmpty
-                  inputProps={{ "aria-label": "Without label" }}
-                  MenuProps={{
-                    PaperProps: {
-                      style: {
-                        maxHeight: 200,
-                      },
-                    },
-                  }}
-                >
-                  {Array.from({ length: 47 }, (_, index) => (
-                    // Your JSX code here, for example:
-                    <MenuItem key={index} value={index}>
-                      ${80 + index * 20}
-                    </MenuItem>
-                  ))}
-                  <MenuItem value={"above 1000"}>above $1000</MenuItem>
-                </Select>
-              </FormControl>
+              
               <Autocomplete
                 disablePortal
                 id="Current_Timezone"

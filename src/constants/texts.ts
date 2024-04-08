@@ -922,4 +922,10 @@ export const FooterPageText={
   address1:"B1/H3, NH-19, Block B,",
   address2:"Mohan Cooperative Industrial Estate, New Delhi, 110044"
 }
+
+export const LeadershipText={
+    LeadershipContent:`Our forward-looking leadership team is made up of dedicated, focused and experienced executives.  Working with each other and with our employees worldwide, their knowledge and experience come together to make a difference for all our stakeholders – patients, healthcare providers, employees, investors and communities around the globe.`,
+
+}
+
 export default TEXTS;
