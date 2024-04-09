@@ -464,7 +464,7 @@ const Form: React.FC = () => {
                 touched={touched}
               />
             </div>
-            <div style={{
+            {/* <div style={{
               width:'30%',
               height:'70vh',
               backgroundColor:'red',
@@ -478,7 +478,7 @@ const Form: React.FC = () => {
                   ))
                 }
               </div>
-            </div>
+            </div> */}
           </div>
           <Button type="submit" variant="contained" color="primary" onClick={(e)=>handleSubmit(e)}>
                   Get elite candidates now
