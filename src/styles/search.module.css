@@ -14,6 +14,9 @@
     width: 780px;
   }
   font-family: "Poppins", sans-serif;
+  display:flex;
+  
+  justify-content: space-between;
 }
 .outerCheckbox {
   @media (1024px>=width>768px) {
@@ -104,7 +107,7 @@
 }
 
 .profileName {
-  color: var(--Black, #000);
+  color: var(--Black, #000000fd);
   font-family: SF Pro Display;
   font-size: 19px;
   font-style: normal;

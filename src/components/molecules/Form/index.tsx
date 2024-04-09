@@ -109,6 +109,7 @@ const Form: React.FC = () => {
   const [filterOption, setFilterOption] = useState("");
   const [touched, setTouched] = useState(false);
   const [salary, setSalary] = useState<string>();
+  const [recent,setRecent]=useState([]);
 
   const [expandedRow, setExpandedRow] = useState(null);
 
@@ -128,9 +129,7 @@ const Form: React.FC = () => {
     setProfile({ ...profiles, maxExp: event.target.value });
   }
 
-  const handleSubmit = async (
-    e: React.FormEvent<HTMLFormElement>
-  ): Promise<void> => {
+  const handleSubmit = async (e:any)=> {
     setLoading(true);
     console.log("AAAA", profiles);
     if (profiles.Skill_Set) {
@@ -145,6 +144,8 @@ const Form: React.FC = () => {
 
     try {
       console.log("-------->", profiles, pageNumber);
+      const jsonString = JSON.stringify(profiles);
+      localStorage.setItem('RecentSearch',jsonString);
       const resp = await axios.post(`${DEV_PUBLIC_URL}form/candidates`, {
         profiles,
         pageNumber,
@@ -457,143 +458,31 @@ const Form: React.FC = () => {
         <div>
           <h1 className={css.homeWrapper}>Search Elite Developers</h1>
           <div className={css.formStyle}>
-            <CustomAutocompleteFromAPI
-              setSelectedValue={setProfile}
-              touched={touched}
-            />
-           
-            <form onSubmit={handleSubmit}>
-              {/* <TextField
-              placeholder="Enter Current Location"
-              name="Current_Location"
-              value={profiles.Current_Location}
-              onChange={handleInputChange}
-              fullWidth
-              margin="normal"
-              style={{ margin: '20px 25%', width: '50%' }}
-            /> */}
-              <SmallAutocompleteFromAPI
-                handleFilter={null}
-                setAllSkills={null}
-                setFinalTotalSkills={null}
-                widtha="50%"
-                name="Current Location"
-                imageurl=""
-                fieldName="searchLocation"
+            <div style={{width:'65%'}}>
+              <CustomAutocompleteFromAPI
                 setSelectedValue={setProfile}
-                url={`${DEV_PUBLIC_URL}location/candidates`}
+                touched={touched}
               />
-              {/* <TextField
-              placeholder="Enter Years of Experience"
-              name="Experience_in_Years"
-              value={profiles.Experience_in_Years}
-              onChange={handleInputChange}
-              fullWidth
-              margin="normal"
-              style={{ margin: '20px 25%', width: '50%' }}
-            /> */}
+            </div>
+            <div style={{
+              width:'30%',
+              height:'70vh',
+              backgroundColor:'red',
+              marginRight:'2%'
+              }}>
+              RECENT SEARCHES
               <div>
-                <FormControl sx={{ margin: "20px 0px 0px 25%", width: "25%" }}>
-                  <InputLabel>Minimum Experience</InputLabel>
-                  <Select
-                    label="Minimum Experience"
-                    displayEmpty
-                    inputProps={{ "aria-label": "Without label" }}
-                    onChange={handleMinExperienceChange}
-                    MenuProps={{
-                      PaperProps: {
-                        style: {
-                          maxHeight: 200,
-                        },
-                      },
-                    }}
-                  >
-                    {Array.from({ length: 16 }, (_, index) => (
-                      <MenuItem key={index} value={index + 5}>
-                        {index + 5}
-                      </MenuItem>
-                    ))}
-                  </Select>
-                </FormControl>
-                <FormControl sx={{ margin: "20px 0px 0px 0px", width: "25%" }}>
-                  <InputLabel>Maximum Experience</InputLabel>
-                  <Select
-                    label="Maximum Experience"
-                    displayEmpty
-                    inputProps={{ "aria-label": "Without label" }}
-                    onChange={handleMaxExperienceChange}
-                    MenuProps={{
-                      PaperProps: {
-                        style: {
-                          maxHeight: 200,
-                        },
-                      },
-                    }}
-                  >
-                    {Array.from({ length: 16 }, (_, index) => (
-                      <MenuItem key={index} value={index + 5}>
-                        {index + 5}
-                      </MenuItem>
-                    ))}
-                  </Select>
-                </FormControl>
+                {
+                  recent.length>0 && recent.map((ele,idx)=>(
+                    <div>{ele}</div>
+                  ))
+                }
               </div>
-
-              
-              <Autocomplete
-                disablePortal
-                id="Current_Timezone"
-                style={{ margin: "20px 25%", width: "50%" }}
-                options={["IST", "CET", "ET", "none"]}
-                sx={{ width: 300 }}
-                onChange={handleTimeZone}
-                renderInput={(params) => (
-                  <TextField {...params} label="Enter Time Zone" />
-                )}
-              />
-              {/* <TextField
-              placeholder="Enter Certification"
-              name="Certification"
-              value={profiles.Certification}
-              onChange={handleInputChange}
-              fullWidth
-              margin="normal"
-              style={{ margin: '20px 25%', width: '50%' }}
-            /> */}
-              <SmallAutocompleteFromAPI
-                handleFilter={null}
-                setAllSkills={null}
-                setFinalTotalSkills={null}
-                widtha="50%"
-                name="Certification"
-                imageurl=""
-                fieldName="word"
-                setSelectedValue={setProfile}
-                url={`${DEV_PUBLIC_URL}certification/candidates`}
-              />
-              <TextField
-                placeholder="Enter Preferred Industry Domain"
-                name="Preferred_Industry_Domain"
-                value={profiles.Preferred_Industry_Domain}
-                onChange={handleInputChange}
-                fullWidth
-                margin="normal"
-                style={{ margin: "20px 25%", width: "50%" }}
-              />
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
-              >
-                <Button type="submit" variant="contained" color="primary">
-                  Get elite candidates now
-                </Button>
-              </div>
-              <br />
-            </form>
+            </div>
           </div>
+          <Button type="submit" variant="contained" color="primary" onClick={(e)=>handleSubmit(e)}>
+                  Get elite candidates now
+          </Button>
         </div>
       )}
 
