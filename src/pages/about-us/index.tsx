@@ -10,7 +10,7 @@ import HireDevSectionWithImageAndIcon from "@/components/molecules/HireDevSectio
 import FotterComponent from "@/components/molecules/Fotter";
 import leadershipimg from "../../assets/images/Leadership/Leaderimg.webp";
 import hireDevStyles from "../../styles/hireDevStyles.module.css";
-
+import homepage from "../../assets/images/About_us/Homepage.png";
 
 export default function About(){
     return (
@@ -19,7 +19,6 @@ export default function About(){
                 style={{
                     width: "100vw",
                     height: "40vh",
-                    flexShrink: "0",
                 }}
                 src={leadershipimg}
                 alt="OUR LEADERSHIP"
@@ -208,6 +207,23 @@ export default function About(){
               </div>
 
 
+            </div>
+            <div>
+                <Image src={homepage} alt="homepage" style={{
+                    width: "100vw",
+                    height: "60vh",
+                    marginTop:'20vh'
+                }}/>
+                <div style={{
+                    position:'relative',
+                    marginLeft:'auto',
+                    marginRight:'auto',
+                    bottom:'50vh',
+                }}>
+                    <div style={{color:'white',fontSize:'2rem',textAlign:'center',marginBottom:'5vh'}}>Get in contact with us and discuss your next project.</div>
+                    <div style={{color:'white',fontSize:'1.5rem',textAlign:'center',marginBottom:'5vh'}}>We offer unique combination of people, process and technology.</div>
+                    {/* <button>CONTACT US</button> */}
+                </div>
             </div>
             <style jsx>
                 {`
