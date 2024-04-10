@@ -66,13 +66,17 @@ export default function Leadership(){
                     Meet our Board of Directors
                 </p>
             </div>
+            <p className="para">Meet Our Executive Team</p>
             <div style={{
                 display:'flex',
                 flexDirection:'row',
                 justifyContent:'space-around',
+                flexWrap:'wrap',
                 alignItems:'center',
                 marginLeft:'4vw',
                 marginRight:'4vw',
+                marginTop:'10vh',
+                marginBottom:'10vh',
             }}>
                 <Card sx={{ width: 350, height:400, marginBottom: '10px', boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)', borderRadius: '10px', overflow: 'hidden' }}>
                     <Image
@@ -126,7 +130,7 @@ export default function Leadership(){
                     </CardContent>
                 </Card>
             </div>
-            
+            <p className="para">Meet Our Execution Team</p>
             <div style={{
                 display:'flex',
                 flexDirection:'row',
@@ -369,6 +373,13 @@ export default function Leadership(){
                     </CardContent>
                 </Card>
             </div>
+
+            <style jsx>{`
+                .para{
+                    margin-left:8vw;
+                    font-size:1.5rem;
+                }
+            `}</style>
         </>
     )
 }
