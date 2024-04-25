@@ -17,6 +17,8 @@
   display:flex;
   
   justify-content: space-between;
+  margin-left: 2vw;
+  margin-right: 2vw;
 }
 .outerCheckbox {
   @media (1024px>=width>768px) {
@@ -446,13 +448,13 @@
   top: 20%;
   left: 10%;
 }
-.iconbox {
+
+.icon_info_box {
   width: 100%;
- 
   height: 100%;
 }
 
-.box2 {
+.candidate_profile_box {
   width: 50%;
   /* background-color: blue; */
 }
@@ -480,16 +482,21 @@
   display: none;
 }
 
-/* Hide scrollbar for Firefox */
-
 
 .paperr {
   padding: 15px;
-  gap: 20px;
+  gap: 200px;
   margin-top: 50px;
   width: 800px;
   margin-bottom: 50px;
-  height: 350px;
+  height: auto;
+  font-family: Arial, sans-serif; /* Example font family */
+  font-size: 1rem; /* Example font size */
+  font-weight: 400; /* Example font weight */
+  line-height: 1.5; /* Example line height */
+  background-color: #fd6e6a;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .infobox {
@@ -499,12 +506,12 @@
   grid-column-gap: 0.5px; /* Gap between grid items */
   grid-row-gap:5px;
    /* Adjust the max height as needed */
-  max-height: 90%;
+  max-height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
   font-size: 0.9em;
   scrollbar-width: none;
-  
+  background-color: #38f9d7;
 }
 
 .infobox > div {
@@ -521,6 +528,7 @@
   display: flex;
   justify-content: space-between; 
   margin-top: 5px;
-  /* background-color:yellow; */
+  background-color:yellow;
   font-size: 0.9em;
+  width:100%
 }

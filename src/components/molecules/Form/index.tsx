@@ -27,10 +27,17 @@ import SmallAutocompleteFromAPI from "../smallAutoComplete";
 import { useGlobalContext } from "../../../../context/store";
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
-
+import CloseIcon from '@mui/icons-material/Close';
 interface Option {
   id: number;
   label: string;
+}
+
+interface RecentSearchItem {
+  Skill_Set: string; 
+  Experience_in_Years:string;
+  minExp:string;
+  maxExp:string;
 }
 
 interface Candidates {
@@ -109,10 +116,9 @@ const Form: React.FC = () => {
   const [filterOption, setFilterOption] = useState("");
   const [touched, setTouched] = useState(false);
   const [salary, setSalary] = useState<string>();
-  const [recent,setRecent]=useState([]);
-
+  const [recent,setRecent]=useState(false);
+  const [recentSearch, setRecentSearch] = useState<RecentSearchItem[]>([]);
   const [expandedRow, setExpandedRow] = useState(null);
-
 
   const toggleRow = (index:any) => {
     setExpandedRow(expandedRow === index ? null : index);
@@ -144,8 +150,17 @@ const Form: React.FC = () => {
 
     try {
       console.log("-------->", profiles, pageNumber);
-      const jsonString = JSON.stringify(profiles);
+      let localData=localStorage.getItem("RecentSearch");
+      if(localData)localData=JSON.parse(localData);
+      let jsonArr:any[]=[];
+      if (typeof localData === 'object' && Array.isArray(localData)) {
+        jsonArr = [profiles, ...localData]; // Concatenate localData array with profiles array
+      } else {
+          jsonArr.push(profiles); // Push profiles into jsonArr
+      } 
+      const jsonString = JSON.stringify(jsonArr);
       localStorage.setItem('RecentSearch',jsonString);
+      setRecent(true);
       const resp = await axios.post(`${DEV_PUBLIC_URL}form/candidates`, {
         profiles,
         pageNumber,
@@ -374,6 +389,7 @@ const Form: React.FC = () => {
         : selectedId.filter((item) => item !== valueData)
     );
   };
+  
   const handleSelectAll = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSelectAll(e.target.checked);
     const allIDs = apiResponse.map((item) => item.id);
@@ -431,9 +447,11 @@ const Form: React.FC = () => {
       setApiDummyResponse(sortedProfiles);
     }
   };
+
   useEffect(() => {
     console.log("mymy", profiles);
   }, [profiles]);
+
   const handleChangefilter = async (event: SelectChangeEvent) => {
     setFilterOption(event.target.value);
     console.log("object", event.target.value);
@@ -452,40 +470,100 @@ const Form: React.FC = () => {
     setAllSkillInfo((prevSkills) => [...prevSkills, skillInfo]);
     setSelectedMonth("");
   };
+  useEffect(()=>{
+    let data=localStorage.getItem("RecentSearch");
+    if(data)
+      {
+        data=JSON.parse(data);
+        typeof(data)==='object' && data && setRecentSearch(data);
+      }
+    console.log('Reached here',data);
+  },[])
+
+  const handleClickRecent=(search:any)=>{
+    console.log('Inside function',search);
+    let skillElem=document.getElementById("first")  as HTMLInputElement;
+    let LocElem=document.getElementById("second")  as HTMLInputElement;
+    let MinExpElem=document.getElementById("third")  as HTMLInputElement;
+    let MaxExpElem=document.getElementById("fourth")  as HTMLInputElement;
+    let TimeZoneElem=document.getElementById("fifth")  as HTMLInputElement;
+    if(skillElem){
+      skillElem.value=search.Skill_Set;
+    }
+    if(LocElem){
+      if(search.Current_Location){
+        LocElem.value=search.Current_Location;
+      }
+    }
+    if(MinExpElem){
+      if(search.minExp){
+        MinExpElem.value=search.minExp;
+      }
+    }
+    if(MaxExpElem){
+      if(search.maxExp){
+        MaxExpElem.value=search.maxExp;
+      }
+    }
+    console.log('abcdefg',search,profiles);
+    setProfile({...search})
+    // if(TimeZoneElem){
+    //   if(search.Current_Location.length>0){
+    //     TimeZoneElem.value=search.Current_Location
+    //   }
+    // }
+  }
+
+  const handleClose = (index:any) => {
+    console.log('hiii')
+    let data = localStorage.getItem("RecentSearch");
+    if (data) {
+      data = JSON.parse(data);
+      let arr = Array.isArray(data) ? data.filter((ele, idx) => idx !== index) : [];
+      // Update local storage with the filtered data
+      localStorage.setItem("RecentSearch", JSON.stringify(arr));
+      setRecentSearch(arr);
+    }
+  }
+  
+
   return (
     <>
       {!getAllCandidate && (
         <div>
           <h1 className={css.homeWrapper}>Search Elite Developers</h1>
           <div className={css.formStyle}>
-            <div style={{width:'65%'}}>
+            <div style={{width:'60%'}}>
               <CustomAutocompleteFromAPI
                 setSelectedValue={setProfile}
                 touched={touched}
               />
             </div>
-            {/* <div style={{
-              width:'30%',
-              height:'70vh',
-              backgroundColor:'red',
-              marginRight:'2%'
-              }}>
-              RECENT SEARCHES
-              <div>
-                {
-                  recent.length>0 && recent.map((ele,idx)=>(
-                    <div>{ele}</div>
-                  ))
-                }
-              </div>
-            </div> */}
+            <div style={{width:'30%',height:'70vh',backgroundColor:'#f7f7f7',marginRight:'2%',padding:'1.2vw',overflow:'auto'}}>
+              <div style={{fontWeight:'500',fontSize:'2rem'}}>RECENT SEARCHES</div>
+                <div>
+                  {
+                    recentSearch.length>0 && recentSearch.map((ele,idx)=>(
+                      <div style={{display:'flex',marginTop:'4vh'}}  key={idx}>
+                        <div><CloseIcon style={{fontSize:'16',color:'grey',cursor:'pointer'}} onClick={()=>handleClose(idx)}/></div>
+                        <div style={{marginTop:'2.5vh',backgroundColor:'#f7f7f7',fontSize:'1.5rem'}}>
+                          <div>{ele.Skill_Set}</div>
+                          <div style={{marginTop:'-0.4rem'}}>
+                            <span onClick={(event)=>handleClickRecent(ele)} style={{fontSize:'0.9rem',cursor:'pointer',color:'blue',width:'auto'}}>Fill this Search</span>
+                          </div>
+                        </div>
+                      </div>
+                    ))
+                  }
+                </div>
+            </div>
           </div>
           <Button type="submit" variant="contained" color="primary" onClick={(e)=>handleSubmit(e)}>
-                  Get elite candidates now
+            Get elite candidates now
           </Button>
         </div>
       )}
-
+      
       {showAskClient && <AskClient handleYouSelect={handleYouSelect} />}
       {youSelect && (
         <div>
@@ -670,7 +748,7 @@ const Form: React.FC = () => {
             ) : apiDummyResponse.length !== 0 ? (
               apiDummyResponse.map((profile, index) => (
                 <div className={css.outerContainer} key={index}>
-                  <div style={{ marginTop: "150px", marginLeft: "260px" }}>
+                  <div style={{ marginTop: "150px", marginLeft: "260px",backgroundColor:'greenyellow' }}>
                     <Checkbox
                       value={profile.id}
                       checked={selectedId.includes(profile.id)}
@@ -679,45 +757,50 @@ const Form: React.FC = () => {
                     />
                   </div>
                   <Paper elevation={3} className={css.paperr}>
-                    <div>{profile.Name}</div>
-                    <div style={{ display: "flex", height: "90%" }}>
-                      <div className={css.iconbox}>
-                        <div className={css.icons}>
-                          <div style={{ display: "flex" }}>
-                            <BusinessCenterIcon />
-                            <div className={css.icontext}>
-                              {profile.Experience} Years
+                    <div style={{height:'100%',width:'100%',backgroundColor:'green'}}>
+                      <div>{profile.Name}</div>
+                      <div style={{ display: "flex"}}>
+                        <div className={css.icon_info_box}>
+                          {/* icon box starts*/}
+                          <div className={css.icons}>
+                            <div style={{ display: "flex" }}>
+                              <BusinessCenterIcon />
+                              <div className={css.icontext}>
+                                {profile.Experience} Years
+                              </div>
+                            </div>
+                            <div style={{ display: "flex" }}>
+                              <AttachMoneyIcon />
+                              <div className={css.icontext}>{profile.Salary}</div>
+                            </div>
+                            <div style={{ display: "flex" }}>
+                              <LocationOnOutlinedIcon />
+                              <div className={css.icontext}>
+                                {profile.CurrentLocation}
+                              </div>
                             </div>
                           </div>
-                          <div style={{ display: "flex" }}>
-                            <AttachMoneyIcon />
-                            <div className={css.icontext}>{profile.Salary}</div>
+                          {/* icon box ends*/}
+                          {/* info box starts*/}
+                          <div className={css.infobox}>
+                            <div>Current</div>
+                            <div>{profile.CurrentRole}</div>
+
+                            <div>Previous</div>
+                            <div>{profile.PreviousRole}</div>
+
+                            <div>Education</div>
+                            <div>{profile.Education}</div>
+
+                            <div>Key Skills</div>
+                            <div>{profile.Skills}</div>
+
+                            <div>May also know</div>
+                            <div>{profile.MayAlsoKnow}</div>
                           </div>
-                          <div style={{ display: "flex" }}>
-                            <LocationOnOutlinedIcon />
-                            <div className={css.icontext}>
-                              {profile.CurrentLocation}
-                            </div>
-                          </div>
+                          {/* info box ends*/}
                         </div>
-                        <div className={css.infobox}>
-                          <div>Current</div>
-                          <div>{profile.CurrentRole}</div>
-
-                          <div>Previous</div>
-                          <div>{profile.PreviousRole}</div>
-
-                          <div>Education</div>
-                          <div>{profile.Education}</div>
-
-                          <div>Key Skills</div>
-                          <div>{profile.Skills}</div>
-
-                          <div>May also know</div>
-                          <div>{profile.MayAlsoKnow}</div>
-                        </div>
-                      </div>
-                      <div className={css.box2}>
+                        <div className={css.candidate_profile_box}>
                         <div>
                           <center>
                             <Image
@@ -730,6 +813,7 @@ const Form: React.FC = () => {
                           <div className={css.cp}>
                             {profile.CandidateProfile}
                           </div>
+                        </div>
                         </div>
                       </div>
                     </div>
