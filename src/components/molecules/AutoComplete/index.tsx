@@ -26,6 +26,7 @@ function CustomAutocompleteFromAPI({setSelectedValue,touched}: CustomAutocomplet
   const [dynamicLocation,setDynamicLocation]=useState("");
   const [click,setClick]=useState("");
   const [value,setValue]=useState({});
+
   useEffect(() => {
     const fetchData = async () => {
       if (dynamicSkill.length > 0) {

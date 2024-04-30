@@ -11,7 +11,7 @@ import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
 import CloseIcon from '@mui/icons-material/Close';
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import CircularProgress from '@mui/material/CircularProgress';
-
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import axios from 'axios';
 
 interface Profile {
@@ -396,16 +396,21 @@ const SapSearch = () => {
                             </div>
                             <div style={{width:'50px',marginLeft:'auto',marginRight:'auto'}}>
                                 {
-                                    <Button onClick={handleNextPage} variant="contained" disabled={disable} color="secondary">{pageNoDisplay}</Button>
-                                    
+                                    <div style={{width:'100px',display:'flex',justifyContent:'space-around'}}>
+                                        <div style={{fontWeight:800,color:'red',fontSize:'50px'}}>{pageNoDisplay}</div>
+                                        <Button variant="contained" onClick={handleNextPage} disabled={disable} color="secondary">
+                                            <ArrowForwardIosIcon/>
+                                        </Button> 
+                                    </div>
                                 }
                             </div>        
                         </section>
                     }
-                </div>:
+                </div>:               
                 <div style={{width:'50px',marginLeft:'auto',marginRight:'auto',marginTop:'30vh'}}>
                     <CircularProgress size={50} color="secondary"/>
                 </div>
+                
             }
         </>
 
