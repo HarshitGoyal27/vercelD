@@ -12,6 +12,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import CircularProgress from '@mui/material/CircularProgress';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import axios from 'axios';
 
 interface Profile {
@@ -55,8 +56,10 @@ const SapSearch = () => {
     const [pageArr,setPageArr]=useState<Response[]>([]);
     const [pageNoDisplay,setPageNoDisplay]=useState(1);
     const [pageNoAxios,setPageNoAxios]=useState(1);
-    const [disable,setDisable]=useState(false);
+    const [disableForward,setDisableForward]=useState(false);
+    const [disableBackward,setDisableBackward]=useState(true);
     const [arrLoad,setArrLoad]=useState(false);
+    const [pageMap,setPageMap]=useState<{[key: number]:Response[]}>({});
 
     const handleChangeKeyword=(ele:any)=>{
         console.log(ele.target.value);
@@ -102,17 +105,19 @@ const SapSearch = () => {
                 }else{
                     setCandidates([...finalCandidates]);
                 }
-                setDisable(true);
+                setDisableForward(true);
                 setLoading(!loading);
                 setArrLoad(false);
             }else{
-                console.log('Length is greater than 10');
-                let candidatesonPage=finalCandidates.slice(0,10);
-                let remaining_candidates=finalCandidates.slice(10);
-                setCandidates([...candidatesonPage]);
-                setPageArr([...remaining_candidates]);
+                let ans: { [key: number]: Response[] } = {};
+                let len=Math.ceil(finalCandidates.length/10);
+                for(let i=0;i<len;i++){
+                    let arr=finalCandidates.slice(10*i,10*i+10);
+                    ans[i+1]=arr;
+                }
+                console.log('ANS:===>',ans);
+                setPageMap({...ans});
                 setLoading(!loading);
-                setPageNoAxios(pageNoAxios+1);
                 setArrLoad(false);
             }
         }catch(err){
@@ -120,43 +125,27 @@ const SapSearch = () => {
         }
     }
     const handleNextPage=async()=>{
-        setPageNoDisplay(pageNoDisplay+1);
-        let len_in_page_Arr=pageArr.length;
-        if(len_in_page_Arr<10){
-            try{
-                let resp=await axios.post(`${DEV_PUBLIC_SAPURL}sap/candidates`,{profiles,pageNoAxios});
-                let {finalCandidates}=resp.data.data;
-                let len_of_new_page=finalCandidates.length;
-                let candidatesToShowOnPage=[];
-                if(len_of_new_page===0){
-                    candidatesToShowOnPage=pageArr.slice(0,10);
-                    if(candidatesToShowOnPage.length===0){
-                        setZero(true);
-                    }else{
-                        setCandidates([...candidatesToShowOnPage]);
-                    }
-                    setDisable(true);
-                }else{
-                    let remaining_len=10-len_in_page_Arr
-                    let remaining_arr_of_new_page=finalCandidates.slice(0,remaining_len);
-                    let new_page_arr=finalCandidates.slice(remaining_len);
-                    setCandidates([...remaining_arr_of_new_page]);
-                    setPageArr([...new_page_arr]);
-                    setPageNoAxios(pageNoAxios+1);
-                }
-            }catch(err){
-
+        try{
+            const len_of_next_page=pageMap[pageNoDisplay+1]?pageMap[pageNoDisplay+1].length:0;
+            let obj=pageMap;
+            if(len_of_next_page<10){
+                const resp=await axios.post(`${DEV_PUBLIC_SAPURL}sap/candidates`,{profiles,pageNoAxios});
+                const {finalCandidates}=resp.data.data;
+            }else{
+                setPageNoDisplay(pageNoDisplay+1);
+                setDisableBackward(false);
             }
-            console.log('hello the length is',len_in_page_Arr);
-        }else{
-            let candidatesToShowOnPage=pageArr.slice(0,10);
-            let RemainingCandidates=pageArr.slice(10);
-            setCandidates([...candidatesToShowOnPage]);
-            setPageArr([...RemainingCandidates]);
-        }
-
+        }   
+        catch(err){
+            console.log('errrrr');
+        } 
     }
-
+    const handlePrevPage=async()=>{
+        if(pageNoDisplay===2){
+            setDisableBackward(true);    
+        }
+        setPageNoDisplay(pageNoDisplay-1);
+    }
     return (
         <>
             {
@@ -321,9 +310,9 @@ const SapSearch = () => {
                             <div>
                                 {
                                 zero?<div>NO CANDIDATES FOUND</div>:
-                                <div>
+                                <div id="first">
                                     {
-                                        candidates.map((ele,idx)=>(
+                                        pageMap[pageNoDisplay].map((ele,idx)=>(
                                             <div className={css2.outerContainer} key={idx}>
                                                 <div>{idx+1}</div>
                                                 <Paper elevation={3} className={css2.paperr}>
@@ -397,8 +386,11 @@ const SapSearch = () => {
                             <div style={{width:'50px',marginLeft:'auto',marginRight:'auto'}}>
                                 {
                                     <div style={{width:'100px',display:'flex',justifyContent:'space-around'}}>
+                                        <Button variant="contained" onClick={handlePrevPage} disabled={disableBackward} color="secondary">
+                                            <ArrowBackIosNewIcon/>
+                                        </Button>
                                         <div style={{fontWeight:800,color:'red',fontSize:'50px'}}>{pageNoDisplay}</div>
-                                        <Button variant="contained" onClick={handleNextPage} disabled={disable} color="secondary">
+                                        <Button variant="contained" onClick={handleNextPage} disabled={disableForward} color="secondary">
                                             <ArrowForwardIosIcon/>
                                         </Button> 
                                     </div>

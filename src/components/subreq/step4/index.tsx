@@ -34,6 +34,7 @@ const Stepfour: React.FC<SteponeProps> = ({ yearofExpValue, ClientData, handleYe
         const selectedId = parsedData ? parsedData.selectedId : null;
         console.log("id", selectedId);
         try {
+            console.log('DATA::::::',{ClientData,selectedId});
             const resp = await axios.post(`${DEV_PUBLIC_CALLURL}call`, { ClientData, selectedId });
             // const candidates = resp.data.data.candidatesData;
             // if (candidates === 'Data not present') {
