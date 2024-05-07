@@ -8,6 +8,8 @@ import Chip from "@mui/material/Chip";
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import FormControl from "@mui/material/FormControl";
+import CloseIcon from '@mui/icons-material/Close';
+
 
 
 interface Option {
@@ -18,6 +20,12 @@ interface CustomAutocompleteProps {
   setSelectedValue: Function;
   touched: boolean;
 }
+interface RecentSearchItem {
+  Skill_Set: string; 
+  Experience_in_Years:string;
+  minExp:string;
+  maxExp:string;
+}
 
 function CustomAutocompleteFromAPI({setSelectedValue,touched}: CustomAutocompleteProps) {
   const [dynamicSkill, setDynamicSkill] = useState("");
@@ -26,6 +34,7 @@ function CustomAutocompleteFromAPI({setSelectedValue,touched}: CustomAutocomplet
   const [dynamicLocation,setDynamicLocation]=useState("");
   const [click,setClick]=useState("");
   const [value,setValue]=useState({});
+  const [recentSearch, setRecentSearch] = useState<RecentSearchItem[]>([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -72,6 +81,16 @@ function CustomAutocompleteFromAPI({setSelectedValue,touched}: CustomAutocomplet
   useEffect(()=>{
     setSelectedValue({...value});
   },[value])
+
+  useEffect(()=>{
+    let data=localStorage.getItem("RecentSearch");
+    if(data)
+      {
+        data=JSON.parse(data);
+        typeof(data)==='object' && data && setRecentSearch(data);
+      }
+    console.log('Reached here',data);
+  },[])
 
   const handleInputChangeSearch = (event: any) => {
     console.log(event.target.value);
@@ -128,6 +147,46 @@ function CustomAutocompleteFromAPI({setSelectedValue,touched}: CustomAutocomplet
     }
     setValue({...value,Current_Location: ele.textContent });
     setDynamicLocation("");
+  }
+
+   const handleClickRecent=(search:any)=>{
+    console.log('Inside function',search);
+    let skillElem=document.getElementById("first")  as HTMLInputElement;
+    let LocElem=document.getElementById("second")  as HTMLInputElement;
+    let MinExpElem=document.getElementById("third")  as HTMLInputElement;
+    let MaxExpElem=document.getElementById("fourth")  as HTMLInputElement;
+    let TimeZoneElem=document.getElementById("fifth")  as HTMLInputElement;
+    if(skillElem){
+      skillElem.value=search.Skill_Set;
+    }
+    if(LocElem){
+      if(search.Current_Location){
+        LocElem.value=search.Current_Location;
+      }
+    }
+    if(MinExpElem){
+      if(search.minExp){
+        MinExpElem.value=search.minExp;
+      }
+    }
+    if(MaxExpElem){
+      if(search.maxExp){
+        MaxExpElem.value=search.maxExp;
+      }
+    }
+    console.log('ABCEFGH');
+  }
+
+  const handleClose = (index:any) => {
+    console.log('hiii')
+    let data = localStorage.getItem("RecentSearch");
+    if (data) {
+      data = JSON.parse(data);
+      let arr = Array.isArray(data) ? data.filter((ele, idx) => idx !== index) : [];
+      // Update local storage with the filtered data
+      localStorage.setItem("RecentSearch", JSON.stringify(arr));
+      setRecentSearch(arr);
+    }
   }
 
   return (
@@ -225,6 +284,24 @@ function CustomAutocompleteFromAPI({setSelectedValue,touched}: CustomAutocomplet
         variant="outlined"
         style={{ width: "100%",marginBottom:'10vh'}}
       />
+      <div style={{width:'30%',height:'70vh',backgroundColor:'#f7f7f7',marginRight:'2%',padding:'1.2vw',overflow:'auto'}}>
+            <div style={{fontWeight:'500',fontSize:'2rem'}}>RECENT SEARCHES</div>
+              <div>
+                {
+                  recentSearch.length>0 && recentSearch.map((ele,idx)=>(
+                    <div style={{display:'flex',marginTop:'4vh'}}  key={idx}>
+                      <div><CloseIcon style={{fontSize:'16',color:'grey',cursor:'pointer'}} onClick={()=>handleClose(idx)}/></div>
+                      <div style={{marginTop:'2.5vh',backgroundColor:'#f7f7f7',fontSize:'1.5rem'}}>
+                        <div>{ele.Skill_Set}</div>
+                        <div style={{marginTop:'-0.4rem'}}>
+                          <span onClick={(event)=>handleClickRecent(ele)} style={{fontSize:'0.9rem',cursor:'pointer',color:'blue',width:'auto'}}>Fill this Search</span>
+                        </div>
+                      </div>
+                    </div>
+                  ))
+                }
+              </div>
+      </div>
       <style jsx>{`
         .suggestionPoints {
             cursor:pointer;
